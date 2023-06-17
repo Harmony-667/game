@@ -1,132 +1,22 @@
 [
   {
     "opened": {
-      "left": 4491,
-      "right": 4492
+      "left": 1600,
+      "right": 1601
     },
     "closed": {
-      "left": 4487,
-      "right": 4490
+      "left": 1600,
+      "right": 1601
     }
   },
   {
     "opened": {
-      "left": 45965,
-      "right": 45967
+      "left": 1517,
+      "right": 1520
     },
     "closed": {
-      "left": 45966,
-      "right": 45964
-    }
-  },
-  {
-    "opened": {
-      "left": 11625,
-      "right": 11624
-    },
-    "closed": {
-      "left": 11621,
-      "right": 11620
-    }
-  },
-  {
-    "opened": {
-      "left": 47425,
-      "right": 47423
-    },
-    "closed": {
-      "left": 47421,
-      "right": 47424
-    }
-  },
-  {
-    "opened": {
-      "left": 29322,
-      "right": 29317
-    },
-    "closed": {
-      "left": 29316,
-      "right": 29315
-    }
-  },
-  {
-    "opened": {
-      "left": 29321,
-      "right": 29318
-    },
-    "closed": {
-      "left": 29320,
-      "right": 29319
-    }
-  },
-  {
-    "opened": {
-      "left": 31843,
-      "right": 31840
-    },
-    "closed": {
-      "left": 31844,
-      "right": 31841
-    }
-  },
-  {
-    "opened": {
-      "left": 28692,
-      "right": 28693
-    },
-    "closed": {
-      "left": 28690,
-      "right": 28691
-    }
-  },
-  {
-    "opened": {
-      "left": 24373,
-      "right": 24374
-    },
-    "closed": {
-      "left": 24369,
-      "right": 24370
-    }
-  },
-  {
-    "opened": {
-      "left": 31817,
-      "right": 31816
-    },
-    "closed": {
-      "left": 31815,
-      "right": 31814
-    }
-  },
-  {
-    "opened": {
-      "left": 31824,
-      "right": 31826
-    },
-    "closed": {
-      "left": 31825,
-      "right": 31827
-    }
-  },
-  {
-    "opened": {
-      "left": 11718,
-      "right": 11723
-    },
-    "closed": {
-      "left": 11716,
-      "right": 11721
-    }
-  },
-  {
-    "opened": {
-      "left": 39976,
-      "right": 39979
-    },
-    "closed": {
-      "left": 39975,
-      "right": 39978
+      "left": 1517,
+      "right": 1520
     }
   }
 ]

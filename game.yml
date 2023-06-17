@@ -1,12 +1,12 @@
 # Game values
 # You want to edit these to fit your game.
-name: "RS Mod Server [Tek5]"
-game-port: 50015
+name: "Project Harmony"
+game-port: 43594
 revision: 667
 
 # The coordinates for the home location.
-home-x: 3222
-home-z: 3222
+home-x: 2606
+home-z: 3104
 
 # Privileges
 # Any privilege you want to be represented in-game you define here.
@@ -16,17 +16,21 @@ privileges:
     name: "player"
     powers: []
   - id: 1
+    icon: 3
+    name: "Premium"
+    powers: ["premium"]
+  - id: 2
     icon: 1
     name: "moderator"
     powers: ["mod"]
-  - id: 2
+  - id: 3
     icon: 2
     name: "administrator"
     powers: ["mod", "admin"]
-  - id: 3
+  - id: 4
     icon: 2
     name: "owner"
-    powers: ["mod", "dev", "admin", "owner"]
+    powers: [ "mod", "dev", "admin", "owner" ]
 
 # Game services
 # You can pick and choose which services you want to run.

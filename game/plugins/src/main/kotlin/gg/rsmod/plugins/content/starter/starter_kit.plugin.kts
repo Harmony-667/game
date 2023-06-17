@@ -78,7 +78,7 @@ on_login {
                 else -> "#fa9ff"
             }
             it.message(
-                "[<col=d45b5b>Global</col>]: <col=$color>${Misc.formatForDisplay(player.username)} has just logged into 2011Scape for the first time.</col>"
+                "[<col=d45b5b>Global</col>]: <col=$color>${Misc.formatForDisplay(player.username)} has just logged into Harmony for the first time.</col>"
             )
         }
     }

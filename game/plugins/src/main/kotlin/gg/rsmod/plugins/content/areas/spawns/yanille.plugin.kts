@@ -1,0 +1,25 @@
+package gg.rsmod.plugins.content.areas.spawns
+
+spawn_npc(npc = Npcs.BANKER_CLASSIC_FEMALE_GREY_495, x = 2615, z = 3094, walkRadius = 0, direction = Direction.WEST)
+spawn_npc(npc = Npcs.BANKER_CLASSIC_MALE_GREY_494, x = 2615, z = 3093, walkRadius = 0, direction = Direction.WEST)
+spawn_npc(npc = Npcs.BANKER_CLASSIC_MALE_GREY_496, x = 2615, z = 3092, walkRadius = 0, direction = Direction.WEST)
+spawn_npc(npc = Npcs.MAKEOVER_MAGE_2676, x = 2603, z = 3088, walkRadius = 5, direction = Direction.WEST)
+spawn_npc(npc = Npcs.HAIRDRESSER, x = 2603, z = 3088, walkRadius = 5, direction = Direction.WEST)
+spawn_npc(npc = Npcs.THESSALIA, x = 2603, z = 3088, walkRadius = 5, direction = Direction.WEST)
+spawn_npc(npc = Npcs.SHOPKEEPER, x = 2594, z = 3105, walkRadius = 3, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.SHOP_ASSISTANT, x = 2594, z = 3105, walkRadius = 3, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.MAN, x = 2550, z = 3100, walkRadius = 3, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.WOMAN_25, x = 2552, z = 3100, walkRadius = 3, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.FARMER, x = 2568, z = 3098, walkRadius = 5, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.FARMER_1757, x = 2563, z = 3097, walkRadius = 5, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.MASTER_FARMER, x = 2566, z = 3101, walkRadius = 5, direction = Direction.SOUTH)
+
+spawn_npc(npc = Npcs.GIANT_RAT_950, x = 2621, z = 3117, walkRadius = 5, direction = Direction.SOUTH_EAST)
+spawn_npc(npc = Npcs.GIANT_RAT_950, x = 2627, z = 3121, walkRadius = 5, direction = Direction.SOUTH_EAST)
+spawn_npc(npc = Npcs.GIANT_RAT_950, x = 2629, z = 3118, walkRadius = 5, direction = Direction.SOUTH_EAST)
+spawn_npc(npc = Npcs.GIANT_RAT_950, x = 2627, z = 3116, walkRadius = 5, direction = Direction.SOUTH_EAST)
+spawn_npc(npc = Npcs.GIANT_RAT_950, x = 2626, z = 3114, walkRadius = 5, direction = Direction.SOUTH_EAST)
+
+spawn_item(item = Items.WOODEN_SHIELD, amount = 1, x = 2611, z = 3108, respawnCycles = 90)
+spawn_item(item = Items.BRONZE_SWORD, amount = 1, x = 2610, z = 3108, respawnCycles = 90)
+spawn_item(item = Items.COINS_995, amount = 3, x = 2591, z = 3108, height = 1, respawnCycles = 90)

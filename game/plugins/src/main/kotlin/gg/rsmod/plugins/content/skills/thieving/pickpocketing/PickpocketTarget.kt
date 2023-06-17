@@ -47,7 +47,7 @@ enum class PickpocketTarget(
             main {
                 total(256)
                 obj(Items.COINS_995, quantity = 9, slots = 246)
-                obj(Items.POTATO_SEED, slots = 10)
+                obj(Items.FEATHER, quantityRange = 15 ..50, slots = 100)
             }
         },
         damage = 10..10,
