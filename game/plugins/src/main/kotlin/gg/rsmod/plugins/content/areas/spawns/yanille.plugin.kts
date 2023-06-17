@@ -42,7 +42,7 @@ spawn_npc(npc = Npcs.GUARD_CAPTAIN, x = 2553, z = 3080, walkRadius = 5, directio
 spawn_npc(npc = Npcs.WIZARD_DISTENTOR, x = 2590, z = 3086, walkRadius = 5, direction = Direction.WEST)
 spawn_npc(npc = Npcs.WIZARD_FRUMSCONE, x = 2592, z = 9487, walkRadius = 5, direction = Direction.SOUTH)
 spawn_npc(npc = Npcs.ZAVISTIC_RARVE, x = 2591, z = 3090, height = 2, walkRadius = 5, direction = Direction.SOUTH_EAST)
-spawn_npc(npc = Npcs.ROBE_STORE_OWNER, x = 2595, z = 3089, height = 1, walkRadius = 5, direction = Direction.SOUTH_WEST)
+spawn_npc(npc = Npcs.ROBE_STORE_OWNER, x = 2595, z = 3089, height = 2, walkRadius = 5, direction = Direction.SOUTH_WEST)
 spawn_npc(npc = Npcs.WIZARD, x = 2593, z = 3085, height = 2, walkRadius = 5, direction = Direction.SOUTH_WEST)
 spawn_npc(npc = Npcs.WIZARD, x = 2587, z = 3090, height = 2, walkRadius = 5, direction = Direction.NORTH)
 spawn_npc(npc = Npcs.WIZARD, x = 2587, z = 3085, height = 2, walkRadius = 5, direction = Direction.SOUTH)
