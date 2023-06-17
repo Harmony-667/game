@@ -60,7 +60,8 @@ fun addSpawn(player: Player, id: Int) {
         "spawn_npc(npc = ${if (getName(id) == null) id else "Npcs.${getName(id)}"}, x = ${player.tile.x}, z = ${player.tile.z}, walkRadius = 5, direction = Direction.${player.faceDirection})"
     try {
         val file =
-            File("./game/plugins/src/main/kotlin/gg/rsmod/plugins/content/areas/spawns/spawns_${player.tile.regionId}.plugin.kts")
+            //File("./game/plugins/src/main/kotlin/gg/rsmod/plugins/content/areas/spawns/spawns_${player.tile.regionId}.plugin.kts")
+            File("./game/plugins/src/main/kotlin/gg/rsmod/plugins/content/areas/spawns/yanille.plugin.kts")
         if (!file.exists()) {
             createSpawnFile(file)
         }
