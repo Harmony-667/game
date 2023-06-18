@@ -54,9 +54,15 @@ on_npc_death(*ids) {
 ids.forEach {
     set_combat_def(it) {
         configs {
-            attackSpeed = 4
+            attackSpeed = 5
             respawnDelay = 30
             spell = 503
+
+        }
+        aggro {
+            radius = 5
+            searchDelay = 2
+            aggroTimer = 5
         }
         stats {
             hitpoints = 760
