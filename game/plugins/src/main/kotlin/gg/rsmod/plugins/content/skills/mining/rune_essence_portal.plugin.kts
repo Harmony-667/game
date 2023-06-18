@@ -28,6 +28,7 @@ fun getLocation(player: Player) : Tile {
     return when(player.attr[ESSENCE_MINE_INTERACTED_WITH]) {
         Npcs.AUBURY -> Tile(3253, 3401, 0)
         Npcs.SEDRIDOR -> Tile(3105, 9571, 0)
+        Npcs.WIZARD_DISTENTOR -> Tile(2591, 3087, 0)
         else -> Tile(3253, 3401, 0)
     }
 }
