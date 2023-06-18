@@ -38,7 +38,7 @@ suspend fun chat(it: QueueTask) {
                         )
                     ) {
                         1 -> {
-                            it.chatPlayer("One Beer, please. Thanks, Tina.")
+                            it.chatPlayer("One Beer, please. Thanks.")
                             it.chatNpc("Here's a Asgarnian Ale on the house!")
                             it.player.inventory.add(Items.ASGARNIAN_ALE, 1, true, false, -1)
                         }
