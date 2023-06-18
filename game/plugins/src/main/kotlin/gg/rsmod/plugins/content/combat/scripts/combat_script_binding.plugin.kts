@@ -90,3 +90,11 @@ on_npc_combat(*CanifisCitizensCombatScript.ids) {
         CanifisCitizensCombatScript.handleSpecialCombat(this)
     }
 }
+/**
+ * Sets the [on_npc_combat] for Arzinian Avatar Of Magic Level75
+ */
+on_npc_combat(*ArzinianAvatarOfMagic75CombatScript.ids) {
+    npc.queue {
+        ArzinianAvatarOfMagic75CombatScript.handleSpecialCombat(this)
+    }
+}
