@@ -7,14 +7,22 @@ val ids = intArrayOf(Npcs.GIANT_RAT_950, Npcs.GIANT_RAT_4922, Npcs.GIANT_RAT_492
 val table = DropTableFactory
 val giantrats = table.build {
     guaranteed {
-        obj(Items.BONES)
-        obj(Items.RAW_RAT_MEAT)
+        obj(Items.BONES, quantity = 1)
+        obj(Items.RAW_RAT_MEAT, quantity = 1)
     }
-   /* main {
+    main {
         total(128)
-        obj(Items.RAW_RAT_MEAT, quantity = 1, slots = 1)
-        nothing(slots = 1000)
-    }*/
+        obj(Items.BRONZE_MED_HELM, quantity = 1, slots = 8)
+        obj(Items.BRONZE_CHAINBODY, quantity = 1, slots = 8)
+        obj(Items.BRONZE_PLATELEGS, quantity = 1, slots = 8)
+        obj(Items.IRON_SWORD, quantity = 1, slots = 2)
+        obj(Items.IRON_SCIMITAR, quantity = 1, slots = 2)
+        obj(Items.IRON_KITESHIELD, quantity = 1, slots = 2)
+        obj(Items.IRON_PLATELEGS, quantity = 1, slots = 1)
+        obj(Items.IRON_PLATEBODY, quantity = 1, slots = 1)
+        obj(Items.IRON_FULL_HELM, quantity = 1, slots = 1)
+        nothing(slots = 64)
+    }
 }
 
 table.register(giantrats, *ids)
