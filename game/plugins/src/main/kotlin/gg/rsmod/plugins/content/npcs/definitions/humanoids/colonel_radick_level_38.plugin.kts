@@ -3,10 +3,10 @@ package gg.rsmod.plugins.content.npcs.definitions.humanoids
 import gg.rsmod.plugins.content.drops.DropTableFactory
 import gg.rsmod.plugins.content.drops.global.Herbs.minorHerbTable
 
-val ids = intArrayOf(Npcs.SOLDIER)
+val ids = intArrayOf(Npcs.COLONEL_RADICK)
 
 val table = DropTableFactory
-val soldier = table.build {
+val colonel = table.build {
     guaranteed {
         obj(Items.BONES)
     }
@@ -41,7 +41,7 @@ val soldier = table.build {
 
 }
 
-table.register(soldier, *ids)
+table.register(colonel, *ids)
 
 on_npc_pre_death(*ids) {
     val p = npc.damageMap.getMostDamage()!! as Player
