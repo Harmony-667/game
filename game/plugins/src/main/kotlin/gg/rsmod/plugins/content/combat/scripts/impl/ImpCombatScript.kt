@@ -35,7 +35,7 @@ object ImpCombatScript : CombatScript() {
                         randomTile = getRandomTile(npc.tile)
                     }
 //                    npc.moveTo(randomTile)
-                    println("Moved to x: ${randomTile.x} z: ${randomTile.z}")
+                    println("Imp has moved to x: ${randomTile.x} z: ${randomTile.z}")
                 } else {
                     npc.prepareAttack(CombatClass.MELEE, StyleType.STAB, WeaponStyle.NONE)
                     npc.animate(npc.combatDef.attackAnimation)
