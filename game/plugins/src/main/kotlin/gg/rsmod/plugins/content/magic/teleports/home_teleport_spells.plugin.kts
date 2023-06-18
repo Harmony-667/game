@@ -84,7 +84,7 @@ suspend fun QueueTask.waitAndCheckCombat(cycles: Int): Boolean {
 }
 
 enum class HomeTeleport(val spellName: String, val endTile: World.() -> Tile) {
-    LUMBRIDGE("Lumbridge Home Teleport", { Tile(x = 3221, z = 3218, height = 0) }),
+    LUMBRIDGE("Lumbridge Home Teleport", { Tile(x = 2606, z = 3102, height = 0) }),
     ;
 
     companion object {
