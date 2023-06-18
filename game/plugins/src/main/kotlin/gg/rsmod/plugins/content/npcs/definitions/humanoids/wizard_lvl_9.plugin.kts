@@ -40,11 +40,6 @@ val wizard = table.build {
         obj(Items.WATER_TALISMAN, slots = 24)
         obj(Items.MIND_TALISMAN, slots = 24)
 
-        obj(Items.COINS_995, quantity = 1, slots = 184)
-        obj(Items.COINS_995, quantity = 2, slots = 72)
-        obj(Items.COINS_995, quantity = 18, slots = 56)
-        obj(Items.COINS_995, quantity = 30, slots = 8)
-
         nothing(slots = 128)
 
     }
