@@ -80,6 +80,7 @@ spawn_npc(npc = Npcs.ZAMORAK_WIZARD, x = 2629, z = 3074, walkRadius = 5, directi
 spawn_npc(npc = Npcs.ZAMORAK_WIZARD, x = 2624, z = 3074, walkRadius = 5, direction = Direction.WEST)
 spawn_npc(npc = Npcs.ARZINIAN_AVATAR_OF_MAGIC_1858, x = 2626, z = 3077, walkRadius = 5, direction = Direction.WEST)
 spawn_npc(npc = Npcs.LUMBRIDGE_SAGE, x = 2608, z = 3097, walkRadius = 0, direction = Direction.WEST)
+spawn_npc(npc = Npcs.LABRADOR, x = 2574, z = 3082, walkRadius = 2, direction = Direction.EAST)
 
 /** Ground items */
 spawn_item(item = Items.WOODEN_SHIELD, amount = 1, x = 2611, z = 3108, respawnCycles = 90)
