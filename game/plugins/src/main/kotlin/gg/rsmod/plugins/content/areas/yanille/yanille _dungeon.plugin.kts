@@ -1,7 +1,7 @@
 package gg.rsmod.plugins.content.areas.yanille
 
 /**
- * @author Alycia <https://github.com/alycii>
+ * @author Eikenb00m <https://github.com/eikenb00m>
  */
 
 on_obj_option(obj = Objs.DOOR_2559, option = "open") {
@@ -40,4 +40,18 @@ fun handleDoor(player: Player) {
         world.spawn(closedDoor)
         player.playSound(Sfx.DOOR_CLOSE)
     }
+}
+on_obj_option(obj = Objs.STAIRCASE_1728, option = "Climb-Down") {
+    player.moveTo(2621, 9564)
+}
+
+on_obj_option(obj = Objs.STAIRCASE_1729, option = "Climb-Up") {
+    player.moveTo(2621, 9496)
+}
+
+on_obj_option(obj = Objs.PILE_OF_RUBBLE, option = "Climb-Up") {
+    player.moveTo(2614, 9505)
+}
+on_obj_option(obj = Objs.PILE_OF_RUBBLE_2318, option = "Climb-Down") {
+    player.moveTo(2616, 9571)
 }
