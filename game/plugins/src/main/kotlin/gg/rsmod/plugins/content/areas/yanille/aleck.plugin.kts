@@ -27,7 +27,7 @@ on_npc_option(npc = Npcs.ALECK, "talk-to") {
     player.queue {
         chatPlayer("Hello.")
         chatNpc("Hello, Hello,"," and a most warm welcome to my Hunter Emporium.", "We have everything the discerning Hunter could need.")
-        chatNpc("Would you like me to show you our range of equipment?"," aOr was there something specific you were after?")
+        chatNpc("Would you like me to show you our range of equipment?"," Or was there something specific you were after?")
         when(options("Ok, let's see what you've got!", "I'm not interested, thanks.", title = "Select an Option")) {
             1 -> {
                 chatPlayer("Ok, let's see what you've got!")
