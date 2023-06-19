@@ -19,7 +19,7 @@ on_npc_option(npc = Npcs.PET_SHOP_OWNER, option = "Trade") {
     player.openShop("Yanille Pet Shop")
 }
 
-on_npc_option(npc = Npcs.ALECK, "talk-to") {
+on_npc_option(npc = Npcs.PET_SHOP_OWNER, "talk-to") {
     player.queue {
         chatPlayer("Hello.")
         chatNpc("Hello,"," welcome to the Yanille Pet Store.", "We have everything that you need for Summoning.")

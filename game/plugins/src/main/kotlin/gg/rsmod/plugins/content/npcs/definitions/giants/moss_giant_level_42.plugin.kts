@@ -31,6 +31,7 @@ val mossGiant = table.build {
         obj(Items.IRON_ARROW, quantity = 15, slots = 4)
         obj(Items.STEEL_ARROW, quantity = 5, slots = 2)
         obj(Items.ADAMANT_ARROW, quantity = 2, slots = 1)
+        nothing (slots = 128)
 
         table(Herbs.minorHerbTable, slots = 4)
         table(Seeds.uncommonSeedTable, slots = 4)
