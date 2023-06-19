@@ -86,3 +86,33 @@ spawn_npc(npc = Npcs.LABRADOR, x = 2574, z = 3082, walkRadius = 2, direction = D
 spawn_item(item = Items.WOODEN_SHIELD, amount = 1, x = 2611, z = 3108, respawnCycles = 90)
 spawn_item(item = Items.BRONZE_SWORD, amount = 1, x = 2610, z = 3108, respawnCycles = 90)
 spawn_item(item = Items.COINS_995, amount = 3, x = 2591, z = 3108, height = 1, respawnCycles = 90)
+
+spawn_npc(npc = Npcs.MOSS_GIANT, x = 2571, z = 3066, walkRadius = 5, direction = Direction.NORTH)
+
+spawn_npc(npc = Npcs.MOSS_GIANT, x = 2582, z = 3064, walkRadius = 5, direction = Direction.EAST)
+
+spawn_npc(npc = Npcs.MOSS_GIANT, x = 2583, z = 3059, walkRadius = 5, direction = Direction.SOUTH)
+
+spawn_npc(npc = Npcs.MOSS_GIANT, x = 2577, z = 3053, walkRadius = 5, direction = Direction.SOUTH_WEST)
+
+spawn_npc(npc = Npcs.MOSS_GIANT_1587, x = 2571, z = 3050, walkRadius = 5, direction = Direction.SOUTH_WEST)
+
+spawn_npc(npc = Npcs.MOSS_GIANT_1587, x = 2574, z = 3058, walkRadius = 5, direction = Direction.NORTH_EAST)
+
+spawn_npc(npc = Npcs.MOSS_GIANT_1587, x = 2587, z = 3053, walkRadius = 5, direction = Direction.NORTH_EAST)
+
+spawn_npc(npc = Npcs.MOSS_GIANT_1588, x = 2586, z = 3060, walkRadius = 5, direction = Direction.NORTH_WEST)
+
+spawn_npc(npc = Npcs.MOSS_GIANT_1588, x = 2577, z = 3067, walkRadius = 5, direction = Direction.NORTH_WEST)
+
+spawn_npc(npc = Npcs.MOSS_GIANT_1588, x = 2585, z = 3069, walkRadius = 5, direction = Direction.SOUTH)
+
+spawn_npc(npc = Npcs.MOSS_GIANT_4688, x = 2578, z = 3064, walkRadius = 5, direction = Direction.SOUTH_WEST)
+
+spawn_npc(npc = Npcs.MOSS_GIANT_4688, x = 2572, z = 3062, walkRadius = 5, direction = Direction.NORTH)
+
+spawn_npc(npc = Npcs.MOSS_GIANT_4688, x = 2582, z = 3050, walkRadius = 5, direction = Direction.EAST)
+
+spawn_npc(npc = Npcs.MOSS_GIANT_1587, x = 2582, z = 3045, walkRadius = 5, direction = Direction.SOUTH)
+
+spawn_npc(npc = Npcs.MOSS_GIANT, x = 2591, z = 3050, walkRadius = 5, direction = Direction.WEST)
