@@ -1,4 +1,4 @@
-package gg.rsmod.plugins.content.npcs.definitions.critters
+package gg.rsmod.plugins.content.npcs.definitions.animals
 
 import gg.rsmod.game.model.combat.SlayerAssignment
 import gg.rsmod.plugins.content.drops.DropTableFactory
