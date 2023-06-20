@@ -5,6 +5,11 @@ package gg.rsmod.plugins.content.areas.spawns
  * For Project Harmony
  */
 
+/** Ground items */
+spawn_item(item = Items.WOODEN_SHIELD, amount = 1, x = 2611, z = 3108, respawnCycles = 90)
+spawn_item(item = Items.BRONZE_SWORD, amount = 1, x = 2610, z = 3108, respawnCycles = 90)
+spawn_item(item = Items.COINS_995, amount = 3, x = 2591, z = 3108, height = 1, respawnCycles = 90)
+
 /** NPC's */
 spawn_npc(npc = Npcs.BANKER_CLASSIC_FEMALE_GREY_495, x = 2615, z = 3094, walkRadius = 0, direction = Direction.WEST)
 spawn_npc(npc = Npcs.BANKER_CLASSIC_MALE_GREY_494, x = 2615, z = 3091, walkRadius = 0, direction = Direction.WEST)
@@ -81,38 +86,18 @@ spawn_npc(npc = Npcs.ZAMORAK_WIZARD, x = 2624, z = 3074, walkRadius = 5, directi
 spawn_npc(npc = Npcs.ARZINIAN_AVATAR_OF_MAGIC_1858, x = 2626, z = 3077, walkRadius = 5, direction = Direction.WEST)
 spawn_npc(npc = Npcs.LUMBRIDGE_SAGE, x = 2608, z = 3097, walkRadius = 0, direction = Direction.WEST)
 spawn_npc(npc = Npcs.LABRADOR, x = 2574, z = 3082, walkRadius = 2, direction = Direction.EAST)
-
-/** Ground items */
-spawn_item(item = Items.WOODEN_SHIELD, amount = 1, x = 2611, z = 3108, respawnCycles = 90)
-spawn_item(item = Items.BRONZE_SWORD, amount = 1, x = 2610, z = 3108, respawnCycles = 90)
-spawn_item(item = Items.COINS_995, amount = 3, x = 2591, z = 3108, height = 1, respawnCycles = 90)
-
 spawn_npc(npc = Npcs.MOSS_GIANT, x = 2571, z = 3066, walkRadius = 5, direction = Direction.NORTH)
-
 spawn_npc(npc = Npcs.MOSS_GIANT, x = 2582, z = 3064, walkRadius = 5, direction = Direction.EAST)
-
 spawn_npc(npc = Npcs.MOSS_GIANT, x = 2583, z = 3059, walkRadius = 5, direction = Direction.SOUTH)
-
 spawn_npc(npc = Npcs.MOSS_GIANT, x = 2577, z = 3053, walkRadius = 5, direction = Direction.SOUTH_WEST)
-
 spawn_npc(npc = Npcs.MOSS_GIANT_1587, x = 2571, z = 3050, walkRadius = 5, direction = Direction.SOUTH_WEST)
-
 spawn_npc(npc = Npcs.MOSS_GIANT_1587, x = 2574, z = 3058, walkRadius = 5, direction = Direction.NORTH_EAST)
-
 spawn_npc(npc = Npcs.MOSS_GIANT_1587, x = 2587, z = 3053, walkRadius = 5, direction = Direction.NORTH_EAST)
-
 spawn_npc(npc = Npcs.MOSS_GIANT_1588, x = 2586, z = 3060, walkRadius = 5, direction = Direction.NORTH_WEST)
-
 spawn_npc(npc = Npcs.MOSS_GIANT_1588, x = 2577, z = 3067, walkRadius = 5, direction = Direction.NORTH_WEST)
-
 spawn_npc(npc = Npcs.MOSS_GIANT_1588, x = 2585, z = 3069, walkRadius = 5, direction = Direction.SOUTH)
-
 spawn_npc(npc = Npcs.MOSS_GIANT_4688, x = 2578, z = 3064, walkRadius = 5, direction = Direction.SOUTH_WEST)
-
 spawn_npc(npc = Npcs.MOSS_GIANT_4688, x = 2572, z = 3062, walkRadius = 5, direction = Direction.NORTH)
-
 spawn_npc(npc = Npcs.MOSS_GIANT_4688, x = 2582, z = 3050, walkRadius = 5, direction = Direction.EAST)
-
 spawn_npc(npc = Npcs.MOSS_GIANT_1587, x = 2582, z = 3045, walkRadius = 5, direction = Direction.SOUTH)
-
 spawn_npc(npc = Npcs.MOSS_GIANT, x = 2591, z = 3050, walkRadius = 5, direction = Direction.WEST)
