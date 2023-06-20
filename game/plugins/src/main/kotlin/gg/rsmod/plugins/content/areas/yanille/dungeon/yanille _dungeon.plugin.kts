@@ -1,4 +1,4 @@
-package gg.rsmod.plugins.content.areas.yanille
+package gg.rsmod.plugins.content.areas.yanille.dungeon
 
 /**
  * @author Eikenb00m <https://github.com/eikenb00m>
@@ -57,7 +57,7 @@ on_obj_option(obj = Objs.PILE_OF_RUBBLE, option = "Climb-Up") {
 on_obj_option(obj = Objs.PILE_OF_RUBBLE_2318, option = "Climb-Down") {
     player.moveTo(2616, 9571)
 }
-//Yellow Key Monkeybars
+//Orange Key Monkeybars
 on_obj_option(obj = Objs.MONKEYBARS_2321, option = "Swing across") {
     if(!player.inventory.contains(Items.KEY_1544)) {
         player.message("A Strange force hold you form swinging.")
@@ -78,3 +78,32 @@ world.spawn(DynamicObject(id = Objs.FIRE_WALL, type = 10, rot = 0, tile = Tile(2
 world.spawn(DynamicObject(id = Objs.FIRE_WALL, type = 10, rot = 0, tile = Tile(2598, 9492, 0)))//Temp Clipping object
 world.spawn(DynamicObject(id = Objs.FIRE_WALL, type = 10, rot = 0, tile = Tile(2599, 9493, 0)))//Temp Clipping object
 world.spawn(DynamicObject(id = Objs.FIRE_WALL, type = 10, rot = 0, tile = Tile(2598, 9493, 0)))//Temp Clipping object
+
+//Pipe
+on_obj_option(obj = Objs.OBSTACLE_PIPE_2290, option = "Squeeze-through") {
+    player.queue {
+        val z = 9506
+        val x = if (player.tile.x == 2578) 2572 else 2578
+        player.moveTo(tile = Tile(x = x, z = z))
+    }
+}
+
+//Yellow Key Balancing ledge
+on_obj_option(obj = Objs.BALANCING_LEDGE_2303, option = "Walk-across") {
+    if(!player.inventory.contains(Items.KEY_1545)) {
+        player.message("A Strange force hold you form balancing.")
+        return@on_obj_option
+    }
+    player.queue {
+        player.moveTo(2580, 9520)
+    }
+}
+on_obj_option(obj = Objs.BALANCING_LEDGE_35969, option = "Walk-across") {
+    if(!player.inventory.contains(Items.KEY_1545)) {
+        player.message("A Strange force hold you form balancing.")
+        return@on_obj_option
+    }
+    player.queue {
+        player.moveTo(2580, 9512)
+    }
+}
