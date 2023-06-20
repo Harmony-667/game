@@ -98,3 +98,11 @@ on_npc_combat(*ArzinianAvatarOfMagic75CombatScript.ids) {
         ArzinianAvatarOfMagic75CombatScript.handleSpecialCombat(this)
     }
 }
+/**
+ * Sets the [on_npc_combat] for San Tojalon Level 106
+ */
+on_npc_combat(*SanTojalonCombatScript.ids) {
+    npc.queue {
+        SanTojalonCombatScript.handleSpecialCombat(this)
+    }
+}
