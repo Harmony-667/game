@@ -106,3 +106,11 @@ on_npc_combat(*SanTojalonCombatScript.ids) {
         SanTojalonCombatScript.handleSpecialCombat(this)
     }
 }
+/**
+ * Sets the [on_npc_combat] for Black Knight Titan
+ */
+on_npc_combat(*BlackKnightTitanCombatScript.ids) {
+    npc.queue {
+        BlackKnightTitanCombatScript.handleSpecialCombat(this)
+    }
+}
