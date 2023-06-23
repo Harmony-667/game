@@ -1,6 +1,7 @@
 package gg.rsmod.plugins.content.combat.scripts
 
 import AberrantSpectreCombatScript
+import NezikchendCombatScript
 import gg.rsmod.plugins.content.combat.scripts.impl.*
 
 /**
@@ -112,5 +113,13 @@ on_npc_combat(*SanTojalonCombatScript.ids) {
 on_npc_combat(*BlackKnightTitanCombatScript.ids) {
     npc.queue {
         BlackKnightTitanCombatScript.handleSpecialCombat(this)
+    }
+}
+/**
+ * Sets the [on_npc_combat] for Nezikchend
+ */
+on_npc_combat(*NezikchendCombatScript.ids) {
+    npc.queue {
+        NezikchendCombatScript.handleSpecialCombat(this)
     }
 }
