@@ -31,10 +31,11 @@ suspend fun optionOne(it: QueueTask) {
 }
 
 suspend fun optionTwo(it: QueueTask) {
-    it.chatNpc("To-Do line 1.")
-    it.chatNpc("To-Do line 2.")
-    it.chatNpc("To-Do line 3")
-    it.chatNpc("To-Do Line 4","Line 4.1")
+    it.chatNpc("There used to be nasty trolls here who terrorized the city.", "Especially their leader, the big one, they called him Dad.")
+    it.chatNpc("Our heroes kept him in check all this time,", "until the moment came and I ", "and the Guard Captain defeated him.")
+    it.chatNpc("His sons then came to fetch him and ", "brought him back to his caves...")
+    it.chatNpc("Watch out adventurer, the caves are guarded,", "if you are looking for him, follow the trolls.","They have blocked the cave entrance but I and my soldiers have", "the key. You need an Iron key to get through.")
+
     mainDialogue(it, true)
 }
 

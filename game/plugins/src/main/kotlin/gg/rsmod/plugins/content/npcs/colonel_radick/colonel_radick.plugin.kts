@@ -12,6 +12,6 @@ on_global_npc_spawn {
 on_timer(FORCE_CHAT_TIMER) {
     if (!npc.isAlive())
         return@on_timer
-    npc.forceChat("The trolls have blocked our gate!")
+    npc.forceChat("The trolls have the cave!")
     npc.timers[FORCE_CHAT_TIMER] = DELAY.random()
 }
