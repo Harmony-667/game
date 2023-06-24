@@ -29,6 +29,7 @@ val soldier = table.build {
         obj(Items.STEEL_PLATELEGS, quantity = 1, slots = 2)
         obj(Items.STEEL_PLATEBODY, quantity = 1, slots = 2)
         obj(Items.STEEL_SCIMITAR, quantity = 1, slots = 2)
+        obj(Items.IRON_KEY, quantity = 1, slots = 2)
         nothing(slots = 18)
         table(minorHerbTable, slots = 8)
     }

@@ -35,6 +35,7 @@ val colonel = table.build {
         obj(Items.STEEL_CHAINBODY, quantity = 1, slots = 4)
         obj(Items.STEEL_PLATELEGS, quantity = 1, slots = 2)
         obj(Items.STEEL_PLATEBODY, quantity = 1, slots = 2)
+        obj(Items.IRON_KEY, quantity = 1, slots = 4)
         nothing(slots = 18)
         table(minorHerbTable, slots = 8)
     }
