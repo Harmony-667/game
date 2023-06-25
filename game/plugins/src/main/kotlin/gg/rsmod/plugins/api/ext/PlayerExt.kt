@@ -795,6 +795,24 @@ fun essenceTeleport(player: Player, dialogue: String = "Senventior disthine mole
         p.playSound(Sfx.CURSE_HIT)
     }
 }
+fun travelTeleport(player: Player, dialogue: String = "Ego te movere", targetTile: Tile) {
+    val npc = player.getInteractingNpc()
+    npc.attr[INTERACTING_PLAYER_ATTR] = WeakReference(player)
+    val p = npc.getInteractingPlayer()
+    npc.queue {
+        npc.facePawn(npc.getInteractingPlayer())
+        npc.forceChat(dialogue)
+        npc.graphic(108)
+        val projectile = npc.createProjectile(p, 109, ProjectileType.MAGIC)
+        p.world.spawn(projectile)
+        p.playSound(Sfx.CURSE_CAST_AND_FIRE)
+        wait(MagicCombatStrategy.getHitDelay(npc.tile, p.tile) + 1)
+        p.moveTo(targetTile)
+        wait(1)
+        p.graphic(110)
+        p.playSound(Sfx.CURSE_HIT)
+    }
+}
 
 // Note: this does not take ground items, that may belong to the player, into
 // account.
