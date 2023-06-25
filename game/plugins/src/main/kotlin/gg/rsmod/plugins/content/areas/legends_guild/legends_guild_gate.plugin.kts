@@ -57,7 +57,7 @@ fun handleLegendsGate(player: Player) {
     player.lockingQueue(lockState = LockState.DELAY_ACTIONS) {
         world.remove(eastOriginalGate)
         world.remove(westOriginalGate)
-        
+
         player.playSound(Sfx.DOOR_OPEN)
         world.spawn(eastGate)
         world.spawn(westGate)
