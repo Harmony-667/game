@@ -1,4 +1,4 @@
-package gg.rsmod.plugins.content.areas.staffzone
+package gg.rsmod.plugins.content.npcs.mysterious_mage
 
 
 on_npc_option(npc = Npcs.MYSTERIOUS_MAGE, option = "talk-to") {
