@@ -26,3 +26,18 @@ on_obj_option(obj = Objs.STAIRCASE_1722, option = "Climb-Up") {
 on_obj_option(obj = Objs.STAIRCASE_1723, option = "Climb-Down") {
     player.moveTo(2591, 3083, 1)
 }*/
+//magicguild East Portal
+on_obj_option(obj = Objs.MAGIC_PORTAL, option = "Enter") {
+    player.moveTo(2728, 3347, 0)
+    player.message("You have been teleported...")
+}
+//magicguild South Portal
+on_obj_option(obj = Objs.MAGIC_PORTAL_2157, option = "Enter") {
+    //player.moveTo(2728, 3347, 0)
+    player.message("Comming Soon")
+}
+//magicguild South Portal
+on_obj_option(obj = Objs.MAGIC_PORTAL_2158, option = "Enter") {
+    //player.moveTo(2728, 3347, 0)
+    player.message("Comming Soon")
+}
