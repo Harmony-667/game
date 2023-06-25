@@ -3,7 +3,7 @@ package gg.rsmod.plugins.content.areas.spawns
 spawn_npc(npc = Npcs.BANKER_LATEST_FEMALE_BLOND_HANDSBEHIND_2718, x = 2732, z = 3380, height = 2, walkRadius = 5, direction = Direction.SOUTH)
 spawn_npc(npc = Npcs.SIEGFRIED_ERKLE, x = 2725, z = 3379, height = 2, walkRadius = 5, direction = Direction.SOUTH)
 spawn_npc(npc = Npcs.FIONELLA, x = 2729, z = 3378, height = 1, walkRadius = 5, direction = Direction.SOUTH)
-spawn_npc(npc = Npcs.RADIMUS_ERKLE, x = 2724, z = 3368, walkRadius = 5, direction = Direction.EAST)
+//spawn_npc(npc = Npcs.RADIMUS_ERKLE, x = 2724, z = 3368, walkRadius = 5, direction = Direction.EAST)
 spawn_npc(npc = Npcs.SHADOW_WARRIOR, x = 2727, z = 9774, walkRadius = 5, direction = Direction.WEST)
 spawn_npc(npc = Npcs.SHADOW_WARRIOR, x = 2734, z = 9774, walkRadius = 5, direction = Direction.EAST)
 spawn_npc(npc = Npcs.SHADOW_WARRIOR, x = 2731, z = 9771, walkRadius = 5, direction = Direction.SOUTH_WEST)
