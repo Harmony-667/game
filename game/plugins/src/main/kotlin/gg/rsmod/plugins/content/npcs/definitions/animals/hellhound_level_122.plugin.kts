@@ -27,7 +27,7 @@ val hellhound = table.build {
         obj(Items.SARADOMIN_PLATEBODY, quantity = 1, slots = 2)
         obj(Items.SARADOMIN_PLATELEGS, quantity = 1, slots = 2)
         obj(Items.SARADOMIN_PLATESKIRT, quantity = 1, slots = 2)
-        nothing(slots = 36)
+        nothing(slots = 256)
     }
 
 }
