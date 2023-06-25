@@ -202,6 +202,10 @@ on_command("home", Privilege.ADMIN_POWER) {
     val home = world.gameContext.home
     player.moveTo(home)
 }
+on_command("staffzone", Privilege.MOD_POWER) {
+    player.moveTo(2935, 4695)
+    player.message("You teleported to the Staff Zone")
+}
 
 on_command("changepass") {
     val args = player.getCommandArgs()
