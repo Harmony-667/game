@@ -53,7 +53,7 @@ ids.forEach {
     set_combat_def(it) {
         configs {
             attackSpeed = 4
-            respawnDelay = 59
+            respawnDelay = 300
             attackStyle = StyleType.SLASH
         }
         stats {
