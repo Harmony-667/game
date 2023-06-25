@@ -41,7 +41,7 @@ table.register(mountaintroll, *ids)
 
 on_npc_pre_death(*ids) {
     val p = npc.damageMap.getMostDamage()!! as Player
-    p.playSound(Sfx.GIANT_DEATH)
+    p.playSound(Sfx.TROLL_DEATH)
 }
 
 on_npc_death(*ids) {
@@ -72,7 +72,7 @@ ids.forEach {
         anims {
             attack = 1158
             death = 1934
-            block =4995
+            block = 4995
         }
         /*slayer {
             assignment = SlayerAssignment.FIRE_GIANT
