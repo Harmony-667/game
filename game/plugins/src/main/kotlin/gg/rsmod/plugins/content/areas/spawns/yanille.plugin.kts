@@ -101,3 +101,4 @@ spawn_npc(npc = Npcs.MOSS_GIANT_4688, x = 2572, z = 3062, walkRadius = 5, direct
 spawn_npc(npc = Npcs.MOSS_GIANT_4688, x = 2582, z = 3050, walkRadius = 5, direction = Direction.EAST)
 spawn_npc(npc = Npcs.MOSS_GIANT_1587, x = 2582, z = 3045, walkRadius = 5, direction = Direction.SOUTH)
 spawn_npc(npc = Npcs.MOSS_GIANT, x = 2591, z = 3050, walkRadius = 5, direction = Direction.WEST)
+spawn_npc(npc = Npcs.MYSTERIOUS_MAGE, x = 2626, z = 3104, walkRadius = 5, direction = Direction.WEST)
