@@ -31,10 +31,10 @@ suspend fun optionOne(it: QueueTask) {
 }
 
 suspend fun optionTwo(it: QueueTask) {
-    it.chatNpc("To-Do line 1.")
-    it.chatNpc("To-Do line 2.")
-    it.chatNpc("To-Do line 3")
-    it.chatNpc("To-Do Line 4","Line 4.1")
+    it.chatNpc("I dont want to talk about it!")
+    it.chatNpc("That stupid leader DAD....")
+    it.chatNpc("He ruined my caqreer!")
+    it.chatNpc("If u want know more...","Ask Colonel Radick!")
     mainDialogue(it, true)
 }
 
