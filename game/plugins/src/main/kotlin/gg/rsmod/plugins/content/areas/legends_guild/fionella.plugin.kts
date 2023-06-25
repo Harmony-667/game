@@ -13,6 +13,9 @@ create_shop("Legends Guild General Store", CoinCurrency(), containsSamples = fal
     items[4] = ShopItem(Items.STEEL_ARROW, 500)
 }
 
-on_npc_option(npc = Npcs.ARHEIN, option = "trade") {
+on_npc_option(npc = Npcs.FIONELLA, option = "trade") {
+    player.openShop("Legends Guild General Store")
+}
+on_npc_option(npc = Npcs.FIONELLA, option = "talk-to") {
     player.openShop("Legends Guild General Store")
 }
