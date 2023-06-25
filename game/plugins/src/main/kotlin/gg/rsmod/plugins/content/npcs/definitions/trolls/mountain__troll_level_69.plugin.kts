@@ -56,7 +56,7 @@ ids.forEach {
             attackStyle = StyleType.CRUSH
         }
         stats {
-            hitpoints = 190
+            hitpoints = 900
             attack = 40
             strength = 75
             defence = 40

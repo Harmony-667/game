@@ -62,7 +62,7 @@ ids.forEach {
             attackStyle = StyleType.MAGIC_MELEE
         }
         stats {
-            hitpoints = 420
+            hitpoints = 1200
             attack = 86
             strength = 84
             defence = 86

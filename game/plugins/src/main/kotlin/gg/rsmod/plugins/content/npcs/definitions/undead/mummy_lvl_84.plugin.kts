@@ -53,7 +53,7 @@ ids.forEach {
             respawnDelay = 30
         }
         stats {
-            hitpoints = 90
+            hitpoints = 900
             attack = 90
             strength = 30
             defence = 90

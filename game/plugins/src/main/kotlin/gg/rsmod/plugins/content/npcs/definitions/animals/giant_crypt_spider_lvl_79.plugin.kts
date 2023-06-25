@@ -54,7 +54,7 @@ ids.forEach {
             poisonDamage = 12
         }
         stats {
-            hitpoints = 80
+            hitpoints = 800
             attack = 65
             strength = 67
             defence = 65

@@ -59,7 +59,7 @@ ids.forEach {
             attackStyle = StyleType.SLASH
         }
         stats {
-            hitpoints = 3000
+            hitpoints = 1500
             attack = 165
             strength = 168
             defence = 167
