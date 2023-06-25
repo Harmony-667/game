@@ -31,10 +31,12 @@ suspend fun optionOne(it: QueueTask) {
 }
 
 suspend fun optionTwo(it: QueueTask) {
-    it.chatNpc("To-Do line 1.")
-    it.chatNpc("To-Do line 2.")
-    it.chatNpc("To-Do line 3")
-    it.chatNpc("To-Do Line 4","Line 4.1")
+    it.chatNpc("The land of Harmony is build on the remains of", "a big ancient world.")
+    it.chatNpc("That old world will always be respected!")
+    it.chatNpc("The new residents of Harmony have", "changed some things.")
+    it.chatNpc("Like the rats live now outside Yanille","Dad is forced back to his dungeon where he belongs", "The Wizards has come back to ther Magic Guild.", "The Moss Giants has left the city!")
+    it.chatNpc("The dwarfs has find the Yanille Mines","The Yanille dungeon has rediscoverd!", "And many more!", "We are not done yet to discover this new lands!")
+    it.chatNpc("When u got Questions, ask a player or Harmony moderator!", "Or join our discord and ask other players!")
     mainDialogue(it, true)
 }
 
