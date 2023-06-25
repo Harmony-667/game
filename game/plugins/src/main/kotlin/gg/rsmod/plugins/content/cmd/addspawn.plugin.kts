@@ -61,7 +61,7 @@ fun addSpawn(player: Player, id: Int) {
     try {
         val file =
             //File("./game/plugins/src/main/kotlin/gg/rsmod/plugins/content/areas/spawns/spawns_${player.tile.regionId}.plugin.kts")
-            File("./game/plugins/src/main/kotlin/gg/rsmod/plugins/content/areas/spawns/white_wolf_mountain.plugin.kts")
+            File("./game/plugins/src/main/kotlin/gg/rsmod/plugins/content/areas/spawns/ice_queen_lair.plugin.kts")
         if (!file.exists()) {
             createSpawnFile(file)
         }
