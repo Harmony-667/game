@@ -32,3 +32,5 @@ spawn_npc(npc = Npcs.TUROTH_1626, x = 2703, z = 9775, walkRadius = 5, direction 
 spawn_npc(npc = Npcs.TUROTH_1626, x = 2702, z = 9781, walkRadius = 5, direction = Direction.NORTH_WEST)
 spawn_npc(npc = Npcs.TUROTH_1626, x = 2697, z = 9778, walkRadius = 5, direction = Direction.SOUTH_WEST)
 spawn_npc(npc = Npcs.TUROTH_1626, x = 2697, z = 9771, walkRadius = 5, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.LEGENDS_GUARD, x = 2727, z = 3349, walkRadius = 0, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.LEGENDS_GUARD_399, x = 2730, z = 3349, walkRadius = 0, direction = Direction.SOUTH)
