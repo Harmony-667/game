@@ -141791,3 +141791,498 @@
     ranged_strength: 0
     magic_damage: 0
     attack_audio: -1
+- id: 19413
+  name: "Armadyl platebody"
+  examine: "Rune platebody in the colours of Armadyl."
+  tradeable: true
+  weight: 9.0
+  equipment:
+    equip_slot: 4
+    equip_type: -1
+    appearance_id: 527
+    remove_head: false
+    remove_beard: false
+    remove_arms: true
+    weapon_type: -1
+    attack_speed: 4
+    attack_stab: 0
+    attack_slash: 0
+    attack_crush: 0
+    attack_magic: -30
+    attack_ranged: -10
+    defence_stab: 82
+    defence_slash: 80
+    defence_crush: 72
+    defence_magic: -6
+    defence_ranged: 80
+    summoning: 40
+    melee_strength: 0
+    prayer: 1
+    ranged_strength: 1
+    magic_damage: 0
+    attack_audio: -1
+    skill_reqs:
+    - skill: 1
+      level: 40
+- id: 19413
+  name: "Armadyl platelegs"
+  examine: "Rune platelegs in the colours of Armadyl."
+  tradeable: true
+  weight: 9.0
+  equipment:
+    equip_slot: 7
+    equip_type: -1
+    appearance_id: 528
+    remove_head: false
+    remove_beard: false
+    remove_arms: false
+    weapon_type: -1
+    attack_speed: 4
+    attack_stab: 0
+    attack_slash: 0
+    attack_crush: 0
+    attack_magic: -21
+    attack_ranged: -7
+    defence_stab: 51
+    defence_slash: 49
+    defence_crush: 47
+    defence_magic: -4
+    defence_ranged: 49
+    summoning: 15
+    melee_strength: 0
+    prayer: 1
+    ranged_strength: 1
+    magic_damage: 0
+    attack_audio: -1
+    skill_reqs:
+    - skill: 1
+      level: 40
+- id: 19422
+  name: "Armadyl full helm"
+  examine: "A full helmet in the colours of Armadyl."
+  tradeable: true
+  weight: 2.0
+  equipment:
+    equip_slot: 0
+    equip_type: -1
+    appearance_id: 529
+    remove_head: true
+    remove_beard: true
+    remove_arms: false
+    weapon_type: -1
+    attack_speed: 4
+    attack_stab: 0
+    attack_slash: 0
+    attack_crush: 0
+    attack_magic: -6
+    attack_ranged: -2
+    defence_stab: 30
+    defence_slash: 32
+    defence_crush: 27
+    defence_magic: -1
+    defence_ranged: 30
+    summoning: 7
+    melee_strength: 0
+    prayer: 1
+    ranged_strength: 1
+    magic_damage: 0
+    attack_audio: -1
+    skill_reqs:
+    - skill: 1
+      level: 40
+- id: 19422
+  name: "Armadyl kiteshield"
+  examine: "A Rune kiteshield in the colours of Armadyl."
+  tradeable: true
+  weight: 5.0
+  equipment:
+    equip_slot: 5
+    equip_type: -1
+    appearance_id: 530
+    remove_head: false
+    remove_beard: false
+    remove_arms: false
+    weapon_type: -1
+    attack_speed: 4
+    attack_stab: 0
+    attack_slash: 0
+    attack_crush: 0
+    attack_magic: -8
+    attack_ranged: -2
+    defence_stab: 44
+    defence_slash: 48
+    defence_crush: 46
+    defence_magic: -1
+    defence_ranged: 46
+    summoning: 40
+    melee_strength: 0
+    prayer: 0
+    ranged_strength: 0
+    magic_damage: 0
+    attack_audio: -1
+    skill_reqs:
+    - skill: 1
+      level: 40
+- id: 19434
+  name: "Armadyl plateskirt"
+  examine: "Rune plateskirt in the colours of Armadyl."
+  tradeable: true
+  weight: 9.0
+  equipment:
+    equip_slot: 7
+    equip_type: -1
+    appearance_id: 654
+    remove_head: false
+    remove_beard: false
+    remove_arms: false
+    weapon_type: -1
+    attack_speed: 4
+    attack_stab: 0
+    attack_slash: 0
+    attack_crush: 0
+    attack_magic: -21
+    attack_ranged: -7
+    defence_stab: 51
+    defence_slash: 49
+    defence_crush: 47
+    defence_magic: -4
+    defence_ranged: 49
+    summoning: 15
+    melee_strength: 0
+    prayer: 1
+    ranged_strength: 1
+    magic_damage: 0
+    attack_audio: -1
+    skill_reqs:
+    - skill: 1
+      level: 40
+- id: 19428
+  name: "Bandos platebody"
+  examine: "Rune platebody in the colours of Bandos."
+  tradeable: true
+  weight: 9.0
+  equipment:
+    equip_slot: 4
+    equip_type: -1
+    appearance_id: 527
+    remove_head: false
+    remove_beard: false
+    remove_arms: true
+    weapon_type: -1
+    attack_speed: 4
+    attack_stab: 0
+    attack_slash: 0
+    attack_crush: 0
+    attack_magic: -30
+    attack_ranged: -10
+    defence_stab: 82
+    defence_slash: 80
+    defence_crush: 72
+    defence_magic: -6
+    defence_ranged: 80
+    summoning: 40
+    melee_strength: 0
+    prayer: 1
+    ranged_strength: 1
+    magic_damage: 0
+    attack_audio: -1
+    skill_reqs:
+    - skill: 1
+      level: 40
+- id: 19431
+  name: "Bandos platelegs"
+  examine: "Rune platelegs in the colours of Bandos."
+  tradeable: true
+  weight: 9.0
+  equipment:
+    equip_slot: 7
+    equip_type: -1
+    appearance_id: 528
+    remove_head: false
+    remove_beard: false
+    remove_arms: false
+    weapon_type: -1
+    attack_speed: 4
+    attack_stab: 0
+    attack_slash: 0
+    attack_crush: 0
+    attack_magic: -21
+    attack_ranged: -7
+    defence_stab: 51
+    defence_slash: 49
+    defence_crush: 47
+    defence_magic: -4
+    defence_ranged: 49
+    summoning: 15
+    melee_strength: 0
+    prayer: 1
+    ranged_strength: 1
+    magic_damage: 0
+    attack_audio: -1
+    skill_reqs:
+    - skill: 1
+      level: 40
+- id: 19437
+  name: "Bandos full helm"
+  examine: "A full helmet in the colours of Bandos."
+  tradeable: true
+  weight: 2.0
+  equipment:
+    equip_slot: 0
+    equip_type: -1
+    appearance_id: 529
+    remove_head: true
+    remove_beard: true
+    remove_arms: false
+    weapon_type: -1
+    attack_speed: 4
+    attack_stab: 0
+    attack_slash: 0
+    attack_crush: 0
+    attack_magic: -6
+    attack_ranged: -2
+    defence_stab: 30
+    defence_slash: 32
+    defence_crush: 27
+    defence_magic: -1
+    defence_ranged: 30
+    summoning: 7
+    melee_strength: 0
+    prayer: 1
+    ranged_strength: 1
+    magic_damage: 0
+    attack_audio: -1
+    skill_reqs:
+    - skill: 1
+      level: 40
+- id: 19440
+  name: "Bandos kiteshield"
+  examine: "A Rune kiteshield in the colours of Bandos."
+  tradeable: true
+  weight: 5.0
+  equipment:
+    equip_slot: 5
+    equip_type: -1
+    appearance_id: 530
+    remove_head: false
+    remove_beard: false
+    remove_arms: false
+    weapon_type: -1
+    attack_speed: 4
+    attack_stab: 0
+    attack_slash: 0
+    attack_crush: 0
+    attack_magic: -8
+    attack_ranged: -2
+    defence_stab: 44
+    defence_slash: 48
+    defence_crush: 46
+    defence_magic: -1
+    defence_ranged: 46
+    summoning: 40
+    melee_strength: 0
+    prayer: 0
+    ranged_strength: 0
+    magic_damage: 0
+    attack_audio: -1
+    skill_reqs:
+    - skill: 1
+      level: 40
+- id: 19434
+  name: "Bandos plateskirt"
+  examine: "Rune plateskirt in the colours of Bandos."
+  tradeable: true
+  weight: 9.0
+  equipment:
+    equip_slot: 7
+    equip_type: -1
+    appearance_id: 654
+    remove_head: false
+    remove_beard: false
+    remove_arms: false
+    weapon_type: -1
+    attack_speed: 4
+    attack_stab: 0
+    attack_slash: 0
+    attack_crush: 0
+    attack_magic: -21
+    attack_ranged: -7
+    defence_stab: 51
+    defence_slash: 49
+    defence_crush: 47
+    defence_magic: -4
+    defence_ranged: 49
+    summoning: 15
+    melee_strength: 0
+    prayer: 1
+    ranged_strength: 1
+    magic_damage: 0
+    attack_audio: -1
+    skill_reqs:
+    - skill: 1
+      level: 40
+- id: 19398
+  name: "Ancient platebody"
+  examine: "Rune platebody in the colours of Zaros."
+  tradeable: true
+  weight: 9.0
+  equipment:
+    equip_slot: 4
+    equip_type: -1
+    appearance_id: 527
+    remove_head: false
+    remove_beard: false
+    remove_arms: true
+    weapon_type: -1
+    attack_speed: 4
+    attack_stab: 0
+    attack_slash: 0
+    attack_crush: 0
+    attack_magic: -30
+    attack_ranged: -10
+    defence_stab: 82
+    defence_slash: 80
+    defence_crush: 72
+    defence_magic: -6
+    defence_ranged: 80
+    summoning: 40
+    melee_strength: 0
+    prayer: 1
+    ranged_strength: 1
+    magic_damage: 0
+    attack_audio: -1
+    skill_reqs:
+    - skill: 1
+      level: 40
+- id: 19401
+  name: "Ancient platelegs"
+  examine: "Rune platelegs in the colours of Zaros."
+  tradeable: true
+  weight: 9.0
+  equipment:
+    equip_slot: 7
+    equip_type: -1
+    appearance_id: 528
+    remove_head: false
+    remove_beard: false
+    remove_arms: false
+    weapon_type: -1
+    attack_speed: 4
+    attack_stab: 0
+    attack_slash: 0
+    attack_crush: 0
+    attack_magic: -21
+    attack_ranged: -7
+    defence_stab: 51
+    defence_slash: 49
+    defence_crush: 47
+    defence_magic: -4
+    defence_ranged: 49
+    summoning: 15
+    melee_strength: 0
+    prayer: 1
+    ranged_strength: 1
+    magic_damage: 0
+    attack_audio: -1
+    skill_reqs:
+    - skill: 1
+      level: 40
+- id: 19407
+  name: "Ancient full helm"
+  examine: "A full helmet in the colours of Zaros."
+  tradeable: true
+  weight: 2.0
+  equipment:
+    equip_slot: 0
+    equip_type: -1
+    appearance_id: 529
+    remove_head: true
+    remove_beard: true
+    remove_arms: false
+    weapon_type: -1
+    attack_speed: 4
+    attack_stab: 0
+    attack_slash: 0
+    attack_crush: 0
+    attack_magic: -6
+    attack_ranged: -2
+    defence_stab: 30
+    defence_slash: 32
+    defence_crush: 27
+    defence_magic: -1
+    defence_ranged: 30
+    summoning: 7
+    melee_strength: 0
+    prayer: 1
+    ranged_strength: 1
+    magic_damage: 0
+    attack_audio: -1
+    skill_reqs:
+    - skill: 1
+      level: 40
+- id: 19410
+  name: "Ancient kiteshield"
+  examine: "A Rune kiteshield in the colours of Zaros."
+  tradeable: true
+  weight: 5.0
+  equipment:
+    equip_slot: 5
+    equip_type: -1
+    appearance_id: 530
+    remove_head: false
+    remove_beard: false
+    remove_arms: false
+    weapon_type: -1
+    attack_speed: 4
+    attack_stab: 0
+    attack_slash: 0
+    attack_crush: 0
+    attack_magic: -8
+    attack_ranged: -2
+    defence_stab: 44
+    defence_slash: 48
+    defence_crush: 46
+    defence_magic: -1
+    defence_ranged: 46
+    summoning: 40
+    melee_strength: 0
+    prayer: 0
+    ranged_strength: 0
+    magic_damage: 0
+    attack_audio: -1
+    skill_reqs:
+    - skill: 1
+      level: 40
+- id: 19404
+  name: "Ancient plateskirt"
+  examine: "Rune plateskirt in the colours of Zaros."
+  tradeable: true
+  weight: 9.0
+  equipment:
+    equip_slot: 7
+    equip_type: -1
+    appearance_id: 654
+    remove_head: false
+    remove_beard: false
+    remove_arms: false
+    weapon_type: -1
+    attack_speed: 4
+    attack_stab: 0
+    attack_slash: 0
+    attack_crush: 0
+    attack_magic: -21
+    attack_ranged: -7
+    defence_stab: 51
+    defence_slash: 49
+    defence_crush: 47
+    defence_magic: -4
+    defence_ranged: 49
+    summoning: 15
+    melee_strength: 0
+    prayer: 1
+    ranged_strength: 1
+    magic_damage: 0
+    attack_audio: -1
+    skill_reqs:
+    - skill: 1
+      level: 40
