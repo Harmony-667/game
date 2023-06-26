@@ -71,6 +71,8 @@ on_login {
     }
 
     player.message("Welcome to ${world.gameContext.name}.", ChatMessageType.GAME_MESSAGE)
+    player.message("We are now in Aplha Phase", ChatMessageType.GAME_MESSAGE)
+    player.message("After Beta everything wil have a reset!", ChatMessageType.GAME_MESSAGE)
 
     player.checkEquipment()
 
