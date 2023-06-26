@@ -3,7 +3,7 @@
 name: "Project Harmony"
 game-port: 43594
 revision: 667
-bonus-experience: true
+bonus-experience: false
 
 # The coordinates for the home location.
 home-x: 2606
