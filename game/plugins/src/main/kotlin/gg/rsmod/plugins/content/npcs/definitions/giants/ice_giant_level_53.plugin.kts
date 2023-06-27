@@ -19,13 +19,13 @@ val iceGiant = table.build {
         obj(Items.ADAMANT_PICKAXE, quantity = 1, slots = 1)
         obj(Items.ADAMANT_BOOTS, quantity = 1, slots = 4)
         obj(Items.ADAMANT_GAUNTLETS, quantity = 1, slots = 4)
-        obj(Items.ADAMANT_PICKAXE, quantity = 1, slots = 1)
         obj(Items.ADAMANT_HATCHET, quantity = 1, slots = 1)
         obj(Items.ADAMANT_ARROW, quantityRange = 1..12, slots = 2)
         obj(Items.NATURE_RUNE, quantityRange = 1..5, slots = 2)
         obj(Items.DEATH_RUNE, quantityRange = 1..5, slots = 2)
         obj(Items.BLOOD_RUNE, quantityRange = 1..5, slots = 2)
         obj(Items.MITHRIL_ORE_NOTED, quantityRange = 1..10, slots = 4)
+        nothing(slots = 256)
     }
 
 
