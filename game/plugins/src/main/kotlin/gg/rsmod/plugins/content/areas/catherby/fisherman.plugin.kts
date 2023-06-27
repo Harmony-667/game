@@ -1,4 +1,4 @@
-package gg.rsmod.plugins.content.catherby
+package gg.rsmod.plugins.content.areas.catherby
 
 val FORCE_CHAT_TIMER = TimerKey()
 val DELAY = 10..100
