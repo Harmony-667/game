@@ -1,4 +1,4 @@
-package gg.rsmod.plugins.content.npcs.mysterious_mage
+package gg.rsmod.plugins.content.npcs.elkoy
 
 
 on_npc_option(npc = Npcs.ELKOY, option = "talk-to") {

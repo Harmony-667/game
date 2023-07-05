@@ -9,4 +9,5 @@ package gg.rsmod.plugins.content.areas.spawns
 spawn_npc(npc = Npcs.ELKOY, x = 2460, z = 3414, walkRadius = 5, direction = Direction.WEST)
 spawn_npc(npc = Npcs.MYSTERIOUS_MAGE, x = 2461, z = 3425, walkRadius = 5, direction = Direction.WEST)
 spawn_npc(npc = Npcs.GNOME_TRAINER, x = 2479, z = 3427, walkRadius = 5, direction = Direction.WEST)
+spawn_npc(npc = Npcs.GNOME_COACH, x = 2475, z = 3438, walkRadius = 5, direction = Direction.WEST)
 
