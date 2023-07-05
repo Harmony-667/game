@@ -12,7 +12,7 @@ on_obj_option(obj = Objs.CAVE_ENTRANCE_2806, option = "Enter") {
     }
     player.queue {
         player.moveTo(2646, 9378)
-        player.message("The entrance you enterd, is a long dark weird tunnel. Be carefull!")
+        player.message("The entrance you entered, is a long dark weird tunnel. Be carefull!")
     }
 }
 on_obj_option(obj = Objs.TUNNEL_32068, option = "Pass-through") {
