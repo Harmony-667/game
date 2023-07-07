@@ -10,4 +10,8 @@ spawn_npc(npc = Npcs.ELKOY, x = 2460, z = 3414, walkRadius = 5, direction = Dire
 spawn_npc(npc = Npcs.MYSTERIOUS_MAGE, x = 2461, z = 3425, walkRadius = 5, direction = Direction.WEST)
 spawn_npc(npc = Npcs.GNOME_TRAINER, x = 2479, z = 3427, walkRadius = 5, direction = Direction.WEST)
 spawn_npc(npc = Npcs.GNOME_COACH, x = 2475, z = 3438, walkRadius = 5, direction = Direction.WEST)
+spawn_npc(npc = Npcs.GNOME_BANKER, x = 2448, z = 3427, height = 1, walkRadius = 0, direction = Direction.WEST)
+spawn_npc(npc = Npcs.GNOME_BANKER, x = 2448, z = 3424, height = 1, walkRadius = 0, direction = Direction.WEST)
+spawn_npc(npc = Npcs.GNOME_BANKER, x = 2443, z = 3424, height = 1, walkRadius = 0, direction = Direction.EAST)
+spawn_npc(npc = Npcs.GNOME_BANKER, x = 2443, z = 3425, height = 1, walkRadius = 0, direction = Direction.EAST)
 
