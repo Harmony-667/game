@@ -4,6 +4,9 @@ import gg.rsmod.game.model.attr.GNOME_AGILITY_STAGE
 
 val CLIMB_ANIMATION = 828
 val COMPLETION_BONUS_EXPERIENCE = 39.0
+val REWARD = Items.AGILITY_ARENA_TICKET
+val REWARD_AMOUNT = 1
+val ADVANCED_REWARD_AMOUNT = 10
 
 fun Player.getGnomeAgilityStage(): Int {
     val lastStage = attr[GNOME_AGILITY_STAGE]
@@ -168,6 +171,7 @@ pipes.forEach { pipe ->
             player.forceMove(this, move3)
             if (stage == 6) {
                 player.addXp(Skills.AGILITY, 7.5 + COMPLETION_BONUS_EXPERIENCE)
+                player.inventory.add((REWARD), amount = (REWARD_AMOUNT))
                 player.setGnomeAgilityStage(0)
             } else {
                 player.addXp(Skills.AGILITY, 7.5)
