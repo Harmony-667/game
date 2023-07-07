@@ -3,7 +3,7 @@ package gg.rsmod.plugins.content.npcs.mysterious_mage
 val FORCE_CHAT_TIMER = TimerKey()
 val DELAY = 10..50
 
-on_npc_option(npc = Npcs.GNOME_TRAINER, option = "talk-to") {
+on_npc_option(npc = Npcs.GUNNJORN, option = "talk-to") {
     player.queue {
         mainDialogue(this, false)
     }
@@ -70,6 +70,6 @@ suspend fun Werewolf(it: QueueTask) {
 on_timer(FORCE_CHAT_TIMER) {
     if (!npc.isAlive())
         return@on_timer
-    npc.forceChat("Come on, Faster!")
+    npc.forceChat("Grr, you are to Weak! Go Faster!")
     npc.timers[FORCE_CHAT_TIMER] = DELAY.random()
 }
