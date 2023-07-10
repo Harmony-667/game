@@ -12,37 +12,23 @@ on_npc_option(npc = Npcs.GNOME_TRAINER, option = "talk-to") {
 suspend fun mainDialogue(it: QueueTask, skipStart: Boolean) {
     if (!skipStart)
         it.chatNpc("Greetings, adventurer. Do you want to change course?")
-    when(it.options("Gnome Stronghold Agility Course", "Penguin Agility Course", "Barbian Outpost Agility Course", "Wilderness Agility Course (DANGER)", "Werewolf Agility Course")) {
+    when(it.options("Penguin Agility Course (Comming Soon)", "Barbian Outpost Agility Course", "Wilderness Agility Course (DANGER) (Comming soon)", "Werewolf Agility Course (Comming soon)")) {
+
         1 -> {
-            Gnome(it)
-        }
-        2 -> {
             Penguin(it)
         }
-        3 -> {
+        2 -> {
             Barbian(it)
         }
-        4 -> {
+        3 -> {
             Wilderness(it)
         }
-        5 -> {
+        4 -> {
             Werewolf(it)
         }
     }
 }
 
-suspend fun Gnome(it: QueueTask) {
-    it.chatNpc("Would you change course to the Gnome Stronghild Agility Course?")
-    when(it.options("Yes, please.", "No, thank you.")) {
-        1 -> {
-            it.chatPlayer("Yes, please.")
-            travelTeleport(it.player, dialogue = "Ego te movere", Tile(2480, 3428, 0))
-        }
-        2 -> {
-            it.chatPlayer("No, thank you.")
-        }
-    }
-}
 
 suspend fun Penguin(it: QueueTask) {
     it.chatNpc("Comming soon!")
