@@ -8,3 +8,4 @@ spawn_npc(npc = Npcs.MOUNTAIN_TROLL_1110, x = 2531, z = 3070, walkRadius = 5, di
 spawn_npc(npc = Npcs.MOUNTAIN_TROLL_1111, x = 2524, z = 3071, walkRadius = 5, direction = Direction.WEST)
 spawn_npc(npc = Npcs.MOUNTAIN_TROLL_1112, x = 2528, z = 3081, walkRadius = 5, direction = Direction.NORTH_WEST)
 spawn_npc(npc = Npcs.MUSICIAN_8706, x = 2526, z = 3096, walkRadius = 5, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.ELKOY, x = 2524, z = 3092, walkRadius = 5, direction = Direction.WEST)
