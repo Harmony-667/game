@@ -45,6 +45,7 @@ import java.security.SecureRandom
 import java.util.*
 import java.util.concurrent.TimeUnit
 
+
 /**
  * The game world, which stores all the entities and nodes that the world
  * needs to keep track of.
@@ -541,6 +542,10 @@ class World(val gameContext: GameContext, val devContext: DevContext) {
     fun random(range: IntRange): Int = random.nextInt(range.endInclusive - range.start + 1) + range.start
 
     fun randomDouble(): Double = random.nextDouble()
+    fun randomDouble(range: ClosedFloatingPointRange<Double>): Double {
+        val random = kotlin.random.Random.Default
+        return range.start + (range.endInclusive - range.start) * random.nextDouble()
+    }
 
     fun chance(chance: Int, probability: Int): Boolean {
         check(chance in 1..probability) { "Chance must be within range of (0 - probability]" }
