@@ -40,6 +40,14 @@ fun String.formatNumber(): String {
         String.format("%,d", number)
     }
 }
+fun String.formatNumberXP(): String {
+    val regex = "\\d+".toRegex()
+    return regex.replace(this) { matchResult ->
+        val number = matchResult.value.toLong()
+        String.format("%d", number)
+    }
+}
+
 
 fun String.splitForDialogue(): Array<String> {
     val maxLength = 50
