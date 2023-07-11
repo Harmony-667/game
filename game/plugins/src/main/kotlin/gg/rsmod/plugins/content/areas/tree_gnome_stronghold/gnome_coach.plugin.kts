@@ -11,12 +11,12 @@ create_shop(
     containsSamples = false
 )
 {
-    items[0] = ShopItem(Items.AGILE_TOP, 2, false, 100, 0, 1, 300)
-    items[1] = ShopItem(Items.AGILE_LEGS, 2, false, 100, 0, 1, 300)
-    items[2] = ShopItem(Items.BOOTS_OF_LIGHTNESS, 3, false, 75, 0, 1, 300)
-    items[3] = ShopItem(Items.BRAWLING_GLOVES_AGILITY, 1, false, 150, 0, 600)
-    items[4] = ShopItem(Items.AGILITY_POTION_4, 10, false,10, 0, 1, 300)
-    items[5] = ShopItem(Items.AGILITY_TOME, 10, false,50, 0, 1, 300)
+    //items[0] = ShopItem(Items.AGILE_TOP, 2, false, 100, 0, 1, 300)
+    //items[1] = ShopItem(Items.AGILE_LEGS, 2, false, 100, 0, 1, 300)
+    items[0] = ShopItem(Items.BOOTS_OF_LIGHTNESS, 3, false, 75, 0, 1, 300)
+    items[1] = ShopItem(Items.BRAWLING_GLOVES_AGILITY, 1, false, 150, 0, 600)
+    items[2] = ShopItem(Items.AGILITY_POTION_4, 10, false,10, 0, 1, 300)
+    items[3] = ShopItem(Items.AGILITY_TOME, 10, false,50, 0, 1, 300)
 }
 
 
