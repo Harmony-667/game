@@ -1,5 +1,6 @@
 package gg.rsmod.plugins.content.areas.tree_gnome_stronghold
 
+import gg.rsmod.game.model.shop.Shop
 import gg.rsmod.plugins.content.mechanics.shops.AgilityTickets
 import gg.rsmod.plugins.content.mechanics.shops.CoinCurrency
 import gg.rsmod.plugins.content.skills.Skillcapes
