@@ -22,3 +22,4 @@ spawn_npc(npc = Npcs.RED_DRAGON, x = 3810, z = 3565, walkRadius = 5, direction =
 spawn_npc(npc = Npcs.RED_DRAGON, x = 3814, z = 3570, walkRadius = 5, direction = Direction.NORTH)
 spawn_npc(npc = Npcs.RED_DRAGON, x = 3817, z = 3564, walkRadius = 5, direction = Direction.NORTH)
 spawn_npc(npc = Npcs.RED_DRAGON, x = 3822, z = 3562, walkRadius = 5, direction = Direction.NORTH)
+spawn_npc(npc = Npcs.JEB, x = 3809, z = 3544, walkRadius = 5, direction = Direction.NORTH)
