@@ -6,6 +6,5 @@ package gg.rsmod.plugins.content.areas.spawns
  */
 
 /** NPC's */
-spawn_npc(npc = Npcs.MYSTERIOUS_MAGE, x = 3683, z = 4937, walkRadius = 5, direction = Direction.WEST)
 spawn_npc(npc = Npcs.SIR_VANT, x = 3680, z = 4944, walkRadius = 0, direction = Direction.SOUTH)
 spawn_npc(npc = Npcs.DRAGON_8858, x = 3680, z = 4947, walkRadius = 5, direction = Direction.SOUTH)
