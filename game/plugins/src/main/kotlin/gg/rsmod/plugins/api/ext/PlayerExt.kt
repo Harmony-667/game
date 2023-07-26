@@ -828,6 +828,18 @@ fun travelTeleport(player: Player, dialogue: String = "Ego te movere", targetTil
         p.playSound(Sfx.CURSE_HIT)
     }
 }
+fun sailTeleport(player: Player, dialogue: String = "", targetTile: Tile) {
+    val npc = player.getInteractingNpc()
+    npc.attr[INTERACTING_PLAYER_ATTR] = WeakReference(player)
+    val p = npc.getInteractingPlayer()
+    npc.queue {
+        npc.facePawn(npc.getInteractingPlayer())
+        npc.forceChat(dialogue)
+        p.moveTo(targetTile)
+        wait(1)
+        p.playSound(Sfx.SEASHORE_1)
+    }
+}
 
 // Note: this does not take ground items, that may belong to the player, into
 // account.
