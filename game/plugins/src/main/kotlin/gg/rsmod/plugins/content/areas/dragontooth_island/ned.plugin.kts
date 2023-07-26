@@ -39,11 +39,11 @@ suspend fun No(it: QueueTask) {
 
 on_npc_option(npc = Npcs.NED, option = "talk-to") {
     player.queue {
-        mainDialogue(this, false)
+        mainDialogue1(this, false)
     }
 }
 
-suspend fun mainDialogue(it: QueueTask, skipStart: Boolean) {
+suspend fun mainDialogue1(it: QueueTask, skipStart: Boolean) {
     if (!skipStart)
         it.chatNpc("Greetings, adventurer.", "Do you want to sail back?")
     when(it.options("Yes", "No")) {
