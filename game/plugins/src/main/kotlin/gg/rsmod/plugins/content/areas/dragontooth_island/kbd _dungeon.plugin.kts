@@ -10,5 +10,5 @@ on_obj_option(obj = Objs.CAVE_ENTRANCE, option = "enter") {
     player.moveTo(3017, 10248)
 }
 on_obj_option(obj = Objs.LADDER_32015, option = "climb-up") {
-    player.moveTo(3804, 3531)
+    player.moveTo(3803, 3533)
 }
