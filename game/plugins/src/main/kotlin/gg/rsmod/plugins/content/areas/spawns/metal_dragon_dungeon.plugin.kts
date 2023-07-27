@@ -8,3 +8,26 @@ package gg.rsmod.plugins.content.areas.spawns
 /** NPC's */
 spawn_npc(npc = Npcs.JEB_4896, x = 2285, z = 4684, walkRadius = 5, direction = Direction.NORTH_WEST)
 
+spawn_npc(npc = Npcs.BRONZE_DRAGON, x = 2279, z = 4685, walkRadius = 5, direction = Direction.NORTH_WEST)
+spawn_npc(npc = Npcs.BRONZE_DRAGON, x = 2272, z = 4686, walkRadius = 5, direction = Direction.NORTH_WEST)
+spawn_npc(npc = Npcs.BRONZE_DRAGON, x = 2278, z = 4692, walkRadius = 5, direction = Direction.NORTH_EAST)
+spawn_npc(npc = Npcs.BRONZE_DRAGON, x = 2273, z = 4693, walkRadius = 5, direction = Direction.NORTH_WEST)
+spawn_npc(npc = Npcs.BRONZE_DRAGON, x = 2284, z = 4691, walkRadius = 5, direction = Direction.SOUTH_EAST)
+
+spawn_npc(npc = Npcs.IRON_DRAGON, x = 2282, z = 4702, walkRadius = 5, direction = Direction.NORTH_WEST)
+spawn_npc(npc = Npcs.IRON_DRAGON, x = 2275, z = 4700, walkRadius = 5, direction = Direction.SOUTH_WEST)
+spawn_npc(npc = Npcs.IRON_DRAGON, x = 2272, z = 4707, walkRadius = 5, direction = Direction.NORTH_WEST)
+spawn_npc(npc = Npcs.IRON_DRAGON, x = 2281, z = 4706, walkRadius = 5, direction = Direction.SOUTH_EAST)
+spawn_npc(npc = Npcs.IRON_DRAGON, x = 2281, z = 4698, walkRadius = 5, direction = Direction.SOUTH)
+
+spawn_npc(npc = Npcs.STEEL_DRAGON, x = 2266, z = 4687, walkRadius = 5, direction = Direction.SOUTH_WEST)
+spawn_npc(npc = Npcs.STEEL_DRAGON, x = 2266, z = 4683, walkRadius = 5, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.STEEL_DRAGON, x = 2261, z = 4683, walkRadius = 5, direction = Direction.WEST)
+spawn_npc(npc = Npcs.STEEL_DRAGON, x = 2259, z = 4689, walkRadius = 5, direction = Direction.NORTH_WEST)
+spawn_npc(npc = Npcs.STEEL_DRAGON, x = 2267, z = 4695, walkRadius = 5, direction = Direction.SOUTH)
+
+spawn_npc(npc = Npcs.MITHRIL_DRAGON, x = 2261, z = 4696, walkRadius = 5, direction = Direction.NORTH_WEST)
+spawn_npc(npc = Npcs.MITHRIL_DRAGON, x = 2262, z = 4703, walkRadius = 5, direction = Direction.NORTH_EAST)
+spawn_npc(npc = Npcs.MITHRIL_DRAGON, x = 2268, z = 4702, walkRadius = 5, direction = Direction.SOUTH_EAST)
+spawn_npc(npc = Npcs.MITHRIL_DRAGON, x = 2266, z = 4709, walkRadius = 5, direction = Direction.NORTH_WEST)
+spawn_npc(npc = Npcs.MITHRIL_DRAGON, x = 2257, z = 4708, walkRadius = 5, direction = Direction.SOUTH_WEST)
