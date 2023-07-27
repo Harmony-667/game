@@ -123,3 +123,11 @@ on_npc_combat(*NezikchendCombatScript.ids) {
         NezikchendCombatScript.handleSpecialCombat(this)
     }
 }
+/**
+ * Sets the [on_npc_combat] for KBD
+ */
+on_npc_combat(*KingBlackDragonCombatScript.ids) {
+    npc.queue {
+        KingBlackDragonCombatScript.handleSpecialCombat(this)
+    }
+}
