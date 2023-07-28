@@ -9,6 +9,7 @@ package gg.rsmod.plugins.content.areas.spawns
 spawn_npc(npc = Npcs.GAIUS, x = 2885, z = 3449, walkRadius = 3, direction = Direction.NORTH)
 spawn_npc(npc = Npcs.JATIX, x = 2897, z = 3428, walkRadius = 3, direction = Direction.WEST)
 spawn_npc(npc = Npcs.BANKER_CLASSIC_MALE_GREY_SPIKEYHAIR_499, x = 2903, z = 3472, walkRadius = 3, direction = Direction.WEST)
+spawn_npc(npc = Npcs.MYSTERIOUS_MAGE, x = 2893, z = 3456, walkRadius = 5, direction = Direction.WEST)
 
 spawn_npc(npc = Npcs.DRUID, x = 2894, z = 3450, walkRadius = 5, direction = Direction.WEST)
 spawn_npc(npc = Npcs.DRUID_6973, x = 2889, z = 3448, walkRadius = 5, direction = Direction.SOUTH_WEST)
