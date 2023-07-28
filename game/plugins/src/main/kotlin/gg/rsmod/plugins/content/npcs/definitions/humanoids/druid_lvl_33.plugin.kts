@@ -4,7 +4,7 @@ import gg.rsmod.plugins.content.drops.DropTableFactory
 import gg.rsmod.plugins.content.drops.global.Gems
 import gg.rsmod.plugins.content.drops.global.Herbs
 
-val ids = intArrayOf(Npcs.DRUID, Npcs.DRUID_6973, Npcs.DRUID_6974, Npcs.DRUID_6975, Npcs.DRUID_6976, Npcs.DRUID_6977, Npcs.DRUID_6978, Npcs.DRUID_6978, Npcs.DRUID_6979, Npcs.DRUID_6980,
+val ids = intArrayOf(Npcs.DRUID, Npcs.DRUID_6973, Npcs.DRUID_6974, Npcs.DRUID_6975, Npcs.DRUID_6976, Npcs.DRUID_6977, Npcs.DRUID_6978, Npcs.DRUID_6979, Npcs.DRUID_6980,
     Npcs.DRUIDESS, Npcs.DRUIDESS_6982, Npcs.DRUIDESS_6983, Npcs.DRUIDESS_6984, Npcs.DRUIDESS_6985, Npcs.DRUIDESS_6986, Npcs.DRUIDESS_6987)
 val table = DropTableFactory
 val Druid = table.build {
