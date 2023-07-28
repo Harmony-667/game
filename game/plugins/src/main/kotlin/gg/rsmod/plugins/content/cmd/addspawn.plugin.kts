@@ -61,7 +61,7 @@ fun addSpawn(player: Player, id: Int) {
     try {
         val file =
             //File("./game/plugins/src/main/kotlin/gg/rsmod/plugins/content/areas/spawns/spawns_${player.tile.regionId}.plugin.kts")
-            File("./game/plugins/src/main/kotlin/gg/rsmod/plugins/content/areas/spawns/taverley.plugin.kts")
+            File("./game/plugins/src/main/kotlin/gg/rsmod/plugins/content/areas/spawns/taverley.dungeon.plugin.kts")
         if (!file.exists()) {
             createSpawnFile(file)
         }
