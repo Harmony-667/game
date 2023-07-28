@@ -24,6 +24,8 @@ spawn_npc(npc = Npcs.WOMAN_BRUNETTE_PONYTAIL_5, x = 2817, z = 3447, walkRadius =
 spawn_npc(npc = Npcs.FISHERMAN, x = 2853, z = 3429, walkRadius = 5, direction = Direction.SOUTH_WEST)
 spawn_npc(npc = Npcs.MYSTERIOUS_MAGE, x = 2853, z = 3429, walkRadius = 5, direction = Direction.SOUTH_WEST)
 
+spawn_npc(npc = Npcs.NED_4475, x = 2800, z = 3414, walkRadius = 8, direction = Direction.SOUTH)
+
 //Fishing Spots
 spawn_npc(npc = Npcs.FISHING_SPOT_CAGE_HARPOON, x = 2860, z = 3426, direction = Direction.NORTH, static = true)
 spawn_npc(npc = Npcs.FISHING_SPOT_NET_HARPOON, x = 2853, z = 3423, direction = Direction.NORTH, static = true)
