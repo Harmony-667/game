@@ -15,7 +15,7 @@ val monkOfZamorak = table.build {
         obj(Items.ZAMORAK_ROBE, slots = 1)
             nothing(slots = 18)
     }
-   
+
 }
 
 table.register(monkOfZamorak, *ids)
