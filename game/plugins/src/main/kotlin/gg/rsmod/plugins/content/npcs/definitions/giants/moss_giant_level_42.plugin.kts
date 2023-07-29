@@ -83,10 +83,5 @@ ids.forEach {
         aggro {
             radius = 4
         }
-        slayer {
-            assignment = SlayerAssignment.MOSS_GIANT
-            level = 1
-            experience = 60.0
-        }
     }
 }

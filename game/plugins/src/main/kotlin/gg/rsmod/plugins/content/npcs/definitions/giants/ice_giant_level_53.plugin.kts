@@ -70,10 +70,5 @@ ids.forEach {
         aggro {
             radius = 5
         }
-        slayer {
-            assignment = SlayerAssignment.ICE_GIANT
-            level = 1
-            experience = 70.0
-        }
     }
 }
