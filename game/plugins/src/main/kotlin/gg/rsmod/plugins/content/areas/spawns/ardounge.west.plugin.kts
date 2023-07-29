@@ -148,4 +148,4 @@ spawn_npc(npc = Npcs.TORTURED_SOUL, x = 2529, z = 3273, walkRadius = 5, directio
 
 spawn_npc(npc = Npcs.MOURNER_2373, x = 2551, z = 3271, walkRadius = 5, direction = Direction.WEST)
 
-spawn_npc(npc = Npcs.GHOST_VILLAGER, x = 2527, z = 3313, walkRadius = 5, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.MYSTERIOUS_MAGE, x = 2527, z = 3313, walkRadius = 5, direction = Direction.SOUTH)
