@@ -1,22 +1,24 @@
 package gg.rsmod.plugins.content.npcs.definitions.demons
 
+import gg.rsmod.game.model.combat.SlayerAssignment
 import gg.rsmod.game.model.combat.StyleType
 import gg.rsmod.plugins.content.drops.DropTableFactory
 
 val ids = intArrayOf(Npcs.DEATH_SPAWN)
 
 val table = DropTableFactory
-val deathSpawn = table.build {
+val deathspawn = table.build {
     guaranteed {
-        obj(Items.ACCURSED_ASHES)
+        obj(Items.IMPIOUS_ASHES)
+    }
+
+    main {
+        total(1024)
+        nothing(slots = 128)
     }
 }
 
-table.register(deathSpawn, *ids)
-
-on_npc_spawn(npc = Npcs.DEATH_SPAWN) {
-    npc.graphic(827, 0)
-}
+table.register(deathspawn, *ids)
 
 on_npc_pre_death(*ids) {
     val p = npc.damageMap.getMostDamage()!! as Player
@@ -31,28 +33,30 @@ ids.forEach {
     set_combat_def(it) {
         configs {
             attackSpeed = 4
-            respawnDelay = 0
+            respawnDelay = 30
             attackStyle = StyleType.SLASH
         }
         stats {
-            hitpoints = 600
+            hitpoints = 60
             attack = 67
             strength = 7
             defence = 30
-            magic = 1
-            ranged = 1
         }
         bonuses {
             defenceStab = 20
             defenceSlash = 20
             defenceCrush = 20
-            defenceMagic = 0
             defenceRanged = 20
         }
         anims {
             attack = 9459
             death = 9460
             block = 9461
+        }
+        slayer {
+            assignment = SlayerAssignment.DEATHSPAWN
+            experience = 50.0
+            level = 1
         }
     }
 }
