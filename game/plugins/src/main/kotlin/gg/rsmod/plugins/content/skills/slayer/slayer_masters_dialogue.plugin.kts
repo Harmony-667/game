@@ -17,6 +17,7 @@ masters.forEach { npcId ->
     val slayerMaster = SlayerMaster.values().firstOrNull { it.id == npcId } ?: return@forEach
 
     on_npc_option(npc = npcId, option = "talk-to") {
+
         player.queue {
             chatNpc("'Ello, and what are you after then?")
             val firstOption = when (player.attr.has(STARTED_SLAYER)) {
@@ -24,7 +25,7 @@ masters.forEach { npcId ->
                 false -> "Who are you?"
             }
 
-            when (options(firstOption, "Do you have anything for trade?", "Er... Nothing...")) {
+            when (options(firstOption, "Do you have anything for trade?", "Can you teleport me to West Ardougne?", "Er... Nothing...")) {
                 FIRST_OPTION -> {
                     if (player.attr.has(STARTED_SLAYER)) {
                         giveTask(this, slayerMaster)
@@ -61,6 +62,12 @@ masters.forEach { npcId ->
                     chatPlayer("Do you have anything for trade?")
                     chatNpc("I have a wide selection of Slayer equipment; take a look!")
                     player.openShop("Slayer Equipment")
+                }
+                THIRD_OPTION -> {
+                    chatPlayer("Can you Teleport me to West Ardougne?")
+                    chatNpc("Sure i can!", "Here you go!")
+
+                    travelTeleport(player, dialogue = "Ego te movere", Tile(2531, 3306, 0))
                 }
             }
         }
