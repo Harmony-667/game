@@ -88,10 +88,5 @@ ids.forEach {
             death = 1934
             block = 4995
         }
-        /*slayer {
-            assignment = SlayerAssignment.FIRE_GIANT
-            level = 1
-            experience = 60.0
-        }*/
     }
 }
