@@ -76,10 +76,5 @@ ids.forEach {
         aggro {
             radius = 5
         }
-/*        slayer {
-            assignment = SlayerAssignment.MUMMY
-            level = 1
-            experience = 30.0
-        }*/
     }
 }
