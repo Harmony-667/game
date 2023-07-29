@@ -147,3 +147,5 @@ spawn_npc(npc = Npcs.TORTURED_SOUL, x = 2528, z = 3269, walkRadius = 5, directio
 spawn_npc(npc = Npcs.TORTURED_SOUL, x = 2529, z = 3273, walkRadius = 5, direction = Direction.NORTH_EAST)
 
 spawn_npc(npc = Npcs.MOURNER_2373, x = 2551, z = 3271, walkRadius = 5, direction = Direction.WEST)
+
+spawn_npc(npc = Npcs.GHOST_VILLAGER, x = 2527, z = 3313, walkRadius = 5, direction = Direction.SOUTH)
