@@ -37,7 +37,7 @@ HomeTeleport.values.forEach { teleport ->
             return@on_magic_spell_button
         }
 
-        if (HOME_TELEPORT_TIMER_ENABLED && player.timers.has(HOME_TELEPORT_TIMER) && player.privilege.id != 2) {
+        if (HOME_TELEPORT_TIMER_ENABLED && player.timers.has(HOME_TELEPORT_TIMER) && player.privilege.id != 3) {
             val minutes = player.timers.getMinutesLeft(HOME_TELEPORT_TIMER)
 
             if (minutes != null) {
