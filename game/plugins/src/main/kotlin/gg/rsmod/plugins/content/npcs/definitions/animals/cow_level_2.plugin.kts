@@ -62,10 +62,5 @@ ids.forEach {
             death = 5851
             block = 5850
         }
-        slayer {
-            level = 1
-            experience = 8.0
-            assignment = SlayerAssignment.COW
-        }
     }
 }

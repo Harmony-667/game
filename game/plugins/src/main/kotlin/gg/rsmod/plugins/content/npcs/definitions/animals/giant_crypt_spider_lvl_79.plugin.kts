@@ -80,10 +80,5 @@ ids.forEach {
         aggro {
             radius = 5
         }
- /*       slayer {
-            assignment = SlayerAssignment.SPIDER
-            level = 1
-            experience = 5.0
-        }*/
     }
 }

@@ -55,10 +55,5 @@ ids.forEach {
         aggro {
             radius = 4
         }
-        slayer {
-            assignment = SlayerAssignment.WOLF
-            level = 1
-            experience = 74.0
-        }
     }
 }
