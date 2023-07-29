@@ -66,10 +66,5 @@ ids.forEach {
         aggro {
             radius = 4
         }
-        slayer {
-            assignment = SlayerAssignment.GREEN_DRAGON
-            level = 1
-            experience = 75.0
-        }
     }
 }
