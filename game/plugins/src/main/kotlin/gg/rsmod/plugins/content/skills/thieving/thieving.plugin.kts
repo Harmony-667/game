@@ -8,6 +8,8 @@ import gg.rsmod.plugins.content.skills.thieving.stalls.StallTarget
 import gg.rsmod.plugins.content.skills.thieving.stalls.Stalls
 import gg.rsmod.plugins.content.skills.thieving.cages.CageTarget
 import gg.rsmod.plugins.content.skills.thieving.cages.Cage
+import gg.rsmod.plugins.content.skills.thieving.chests.ChestTarget
+import gg.rsmod.plugins.content.skills.thieving.chests.Chests
 
 PickpocketTarget.values().forEach { target ->
     DropTableFactory.register(target.drops, *target.objectIds.toIntArray(), type = DropTableType.PICKPOCKET)
@@ -51,6 +53,23 @@ CageTarget.values().forEach { target ->
             val obj = player.getInteractingGameObj()
             player.queue {
                 Cage.stealFromCage(this, obj, target)
+            }
+        }
+    }
+}
+ChestTarget.values().forEach { target ->
+    DropTableFactory.register(target.drops, *target.fullAndEmptyObjectIds.keys.toIntArray(), type = DropTableType.CHEST)
+    target.fullAndEmptyObjectIds.keys.forEach { targetId ->
+        val option = if (if_obj_has_option(targetId, "open")) {
+            "open"
+        }
+        else {
+            "Unlock"
+        }
+        on_obj_option(targetId, option) {
+            val obj = player.getInteractingGameObj()
+            player.queue {
+                Chests.stealFromChest(this, obj, target)
             }
         }
     }
