@@ -10,7 +10,7 @@ on_npc_option(npc = Npcs.MYSTERIOUS_MAGE, option = "talk-to") {
 suspend fun mainDialogue(it: QueueTask, skipStart: Boolean) {
     if (!skipStart)
         it.chatNpc("Greetings, adventurer. Where you want to go?")
-    when(it.options("Yanille", "Seers Village (Comming Soon)", "Catherby", "Taverley")) {
+    when(it.options("Yanille", "Seers Village", "Catherby", "Taverley")) {
         1 -> {
             Yanille(it)
         }
@@ -40,7 +40,16 @@ suspend fun Yanille(it: QueueTask) {
 }
 
 suspend fun Seers(it: QueueTask) {
-    it.chatNpc("Seers Village will soon added to the game!")
+    it.chatNpc("You would like to travel to Seers Village?")
+    when(it.options("Yes, please.", "No, thank you.")) {
+        1 -> {
+            it.chatPlayer("Yes, please.")
+            travelTeleport(it.player, dialogue = "Ego te movere", Tile(2732, 3485, 0))
+        }
+        2 -> {
+            it.chatPlayer("No, thank you.")
+        }
+    }
 }
 
 suspend fun Catherby(it: QueueTask) {
