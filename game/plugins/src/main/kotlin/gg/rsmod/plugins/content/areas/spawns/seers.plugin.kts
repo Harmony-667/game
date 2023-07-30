@@ -38,12 +38,12 @@ spawn_npc(npc = Npcs.TANNER_2320, x = 2712, z = 3478, walkRadius = 5, direction 
 spawn_npc(npc = Npcs.MASTER_CRAFTER, x = 2713, z = 3471, walkRadius = 5, direction = Direction.SOUTH_WEST)
 spawn_npc(npc = Npcs.ROMMIK, x = 2714, z = 3480, walkRadius = 5, direction = Direction.NORTH)
 
-spawn_npc(npc = Npcs.BANKER_CLASSIC_MALE_PURPLE_44, x = 2729, z = 3495, walkRadius = 5, direction = Direction.SOUTH)
-spawn_npc(npc = Npcs.BANKER_CLASSIC_MALE_PURPLE_44, x = 2728, z = 3495, walkRadius = 5, direction = Direction.SOUTH)
-spawn_npc(npc = Npcs.BANKER_CLASSIC_FEMALE_PURPLE_45, x = 2727, z = 3495, walkRadius = 5, direction = Direction.SOUTH)
-spawn_npc(npc = Npcs.BANKER_CLASSIC_FEMALE_PURPLE_45, x = 2724, z = 3495, walkRadius = 5, direction = Direction.SOUTH)
-spawn_npc(npc = Npcs.BANKER_CLASSIC_MALE_PURPLE_44, x = 2722, z = 3495, walkRadius = 5, direction = Direction.SOUTH)
-spawn_npc(npc = Npcs.BANKER_CLASSIC_MALE_PURPLE_44, x = 2721, z = 3495, walkRadius = 5, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.BANKER_CLASSIC_MALE_PURPLE_44, x = 2729, z = 3495, walkRadius = 0, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.BANKER_CLASSIC_MALE_PURPLE_44, x = 2728, z = 3495, walkRadius = 0, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.BANKER_CLASSIC_FEMALE_PURPLE_45, x = 2727, z = 3495, walkRadius = 0, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.BANKER_CLASSIC_FEMALE_PURPLE_45, x = 2724, z = 3495, walkRadius = 0, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.BANKER_CLASSIC_MALE_PURPLE_44, x = 2722, z = 3495, walkRadius = 0, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.BANKER_CLASSIC_MALE_PURPLE_44, x = 2721, z = 3495, walkRadius = 0, direction = Direction.SOUTH)
 
 spawn_npc(npc = Npcs.HIGH_PRIEST, x = 2695, z = 3463, walkRadius = 5, direction = Direction.WEST)
 spawn_npc(npc = Npcs.MONK, x = 2698, z = 3461, walkRadius = 5, direction = Direction.EAST)
