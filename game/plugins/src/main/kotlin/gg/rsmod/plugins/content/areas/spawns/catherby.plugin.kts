@@ -22,7 +22,7 @@ spawn_npc(npc = Npcs.HARRY, x = 2836, z = 3447, walkRadius = 2, direction = Dire
 spawn_npc(npc = Npcs.MAN_3, x = 2818, z = 3443, walkRadius = 5, direction = Direction.WEST)
 spawn_npc(npc = Npcs.WOMAN_BRUNETTE_PONYTAIL_5, x = 2817, z = 3447, walkRadius = 5, direction = Direction.SOUTH_WEST)
 spawn_npc(npc = Npcs.FISHERMAN, x = 2853, z = 3429, walkRadius = 5, direction = Direction.SOUTH_WEST)
-spawn_npc(npc = Npcs.MYSTERIOUS_MAGE, x = 2853, z = 3429, walkRadius = 5, direction = Direction.SOUTH_WEST)
+spawn_npc(npc = Npcs.MYSTERIOUS_MAGE, x = 2798, z = 3432, walkRadius = 5, direction = Direction.SOUTH_WEST)
 
 spawn_npc(npc = Npcs.NED_4475, x = 2800, z = 3414, walkRadius = 8, direction = Direction.SOUTH)
 
