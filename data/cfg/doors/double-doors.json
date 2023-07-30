@@ -68,5 +68,25 @@
       "left": 34825,
       "right": 34827
     }
+  },
+  {
+    "opened": {
+      "left": 25826,
+      "right": 25828
+    },
+    "closed": {
+      "left": 25825,
+      "right": 25827
+    }
+  },
+  {
+    "opened": {
+      "left": 25816,
+      "right": 25815
+    },
+    "closed": {
+      "left": 25814,
+      "right": 25813
+    }
   }
 ]
