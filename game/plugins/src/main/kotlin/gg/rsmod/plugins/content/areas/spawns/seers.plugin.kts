@@ -5,8 +5,8 @@ spawn_npc(npc = Npcs.ROGUE, x = 2685, z = 3487, walkRadius = 5, direction = Dire
 spawn_npc(npc = Npcs.ROGUE, x = 2683, z = 3485, walkRadius = 5, direction = Direction.SOUTH_WEST)
 
 spawn_npc(npc = Npcs.VILLAGER, x = 2703, z = 3475, walkRadius = 5, direction = Direction.SOUTH_EAST)
-spawn_npc(npc = Npcs.VILLAGER_1891, x = 2701, z = 3472, walkRadius = 5, direction = Direction.SOUTH)
-spawn_npc(npc = Npcs.VILLAGER_1895, x = 2700, z = 3475, walkRadius = 5, direction = Direction.NORTH_WEST)
+spawn_npc(npc = Npcs.VILLAGER_1892, x = 2701, z = 3472, walkRadius = 5, direction = Direction.SOUTH)
+spawn_npc(npc = Npcs.VILLAGER_1896, x = 2700, z = 3475, walkRadius = 5, direction = Direction.NORTH_WEST)
 
 spawn_npc(npc = Npcs.HERO, x = 2737, z = 3474, walkRadius = 5, direction = Direction.EAST)
 spawn_npc(npc = Npcs.HERO, x = 2734, z = 3474, walkRadius = 5, direction = Direction.WEST)
