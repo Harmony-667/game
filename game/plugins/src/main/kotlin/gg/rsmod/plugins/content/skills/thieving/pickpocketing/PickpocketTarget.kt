@@ -179,7 +179,7 @@ enum class PickpocketTarget(
         stunnedTicks = 8
     ),
     Villager(
-        objectIds = listOf(Npcs.VILLAGER, Npcs.VILLAGER_1889, Npcs.VILLAGER_1890, Npcs.VILLAGER_1892, Npcs.VILLAGER_1893, Npcs.VILLAGER_1894, Npcs.VILLAGER_1895, Npcs.VILLAGER_1896, Npcs.VILLAGER_1897, Npcs.VILLAGER_1898),
+        objectIds = listOf(Npcs.VILLAGER, Npcs.VILLAGER_1889, Npcs.VILLAGER_1890, Npcs.VILLAGER_1892, Npcs.VILLAGER_1893, Npcs.VILLAGER_1894, Npcs.VILLAGER_1896, Npcs.VILLAGER_1897, Npcs.VILLAGER_1898),
         level = 30,
         minChance = 100,
         maxChance = 240,
