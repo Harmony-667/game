@@ -41,8 +41,9 @@ enum class Fish(
     LAVA_EEL(id = Items.RAW_LAVA_EEL, level = 53, minChance = 16, maxChance = 96, xp = 60.0),
     FROG_SPAWN(id = Items.FROG_SPAWN, level = 33, minChance = 16, maxChance = 96, xp = 75.0),
     CAVEFISH(id = Items.RAW_CAVEFISH, level = 85, minChance = 5, maxChance = 17, xp = 300.0), //6.7% success rate = ~134/hour.
-    ROCKTAIL(id = Items.RAW_ROCKTAIL, level = 90, minChance = 5, maxChance = 15, xp = 380.0); //6% success rate = 120/hour.
-
+    ROCKTAIL(id = Items.RAW_ROCKTAIL, level = 90, minChance = 5, maxChance = 15, xp = 380.0),
+    MANTA(id = Items.RAW_MANTA_RAY, level = 81, minChance = 3, maxChance = 40, xp = 169.0), //6% success rate = 120/hour.
+    TURTLE(id = Items.RAW_SEA_TURTLE, level = 79, minChance = 3, maxChance = 40, xp = 157.0);
 
     fun roll(level: Int) = level.interpolate(minChance, maxChance, 1, 99, 255)
 }

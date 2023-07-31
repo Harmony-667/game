@@ -185,6 +185,22 @@ enum class FishingTool(
         fish = listOf(Fish.SHARK),
         identifier = "Harpoon"
     ),
+    HARPOON_MANTA(
+        id = Items.HARPOON,
+        animation = 618,
+        baitId = null,
+        option = "harpoon",
+        fish = listOf(Fish.MANTA),
+        identifier = "Harpoon"
+    ),
+    BIG_FISHING_NET_TURTLE(
+        id = Items.BIG_FISHING_NET,
+        animation = 620,
+        baitId = null,
+        option = "net",
+        fish = listOf(Fish.TURTLE),
+        identifier = "Big fishing net"
+    ),
 
     ;
 
