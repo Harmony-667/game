@@ -1,5 +1,7 @@
 package gg.rsmod.plugins.content.areas.catherby
 
+import gg.rsmod.plugins.content.skills.Skillcapes
+
 val FORCE_CHAT_TIMER = TimerKey()
 val DELAY = 10..100
 
@@ -12,58 +14,78 @@ on_global_npc_spawn {
 on_timer(FORCE_CHAT_TIMER) {
     if (!npc.isAlive())
         return@on_timer
-    npc.forceChat("We are building a Fishing Guild!")
+    npc.forceChat("I am looking for experienced anglers!")
     npc.timers[FORCE_CHAT_TIMER] = DELAY.random()
 }
 on_npc_option(npc = Npcs.FISHERMAN, option = "talk-to") {
     player.queue {
-        mainDialogue(this, false)
-    }
-}
-suspend fun mainDialogue(it: QueueTask, skipStart: Boolean) {
-    if (!skipStart)
-        it.chatNpc("Greetings, adventurer. How can I help you?")
-    when(it.options("Who are you?", "Can you teleport me to the Fishing Guild?.", "Never mind")) {
-        1 -> {
-            whoareyou(it)
-        }
-        2 -> {
-            teleport(it)
-        }
-        3 -> {
-            nevermind(it)
+        if (player.skills.getCurrentLevel(Skills.FISHING) >= 60) {
+            mainChatWith60 (this)
+        }else{ mainChat (this)
         }
     }
 }
 
-suspend fun whoareyou(it: QueueTask) {
-    it.chatPlayer("Who are you?")
-    it.chatNpc("I'm a old fisherman, got a high skill of fishing!")
-    it.chatNpc("I had fight for years with fish!")
-    mainDialogue(it, true)
-}
-
-suspend fun teleport(it: QueueTask) {
-    it.chatPlayer("Can you teleport me to the Fishing Guild?")
-    it.chatNpc("We are still building the fishing guild!")
-    it.chatNpc("Come back later!")
-    mainDialogue(it, true)
-}
-
-/*suspend fun teleport(it: QueueTask) {
-    it.chatNpc("Now, I'm sure I can spare a couple of runes for such", "a worthy cause as these notes. Do you want me to", "teleport you back?")
-    when(it.options("Yes, please.", "No, thank you.")) {
-        1 -> {
-            it.chatPlayer("Yes, please.")
-            travelTeleport(it.player, dialogue = "Ego Piscari ad Loca!", Tile(2611, 3392, 0))
+suspend fun mainChat(it: QueueTask) {
+    it.chatNpc(
+        "Greetings, adventurer. How can I help you?")
+    when (it.options(
+        "Who are you?",
+        "Can you teleport me to the fishing guild?",
+        "Never Mind"
+    )) {
+        FIRST_OPTION -> {
+            it.chatPlayer("Who are you?")
+            it.chatNpc(
+                "I'm a old fisherman, got a high skill of fishing!",
+                "I had fight for years with fish!")
         }
-        2 -> {
-            it.chatPlayer("No, thank you.")
+        SECOND_OPTION -> {
+            it.chatPlayer("Can you teleport me to the fishing guild?")
+            it.chatNpc(
+                "Yes i can, but only realy experienced fishers",
+                "can catch fish there, come back when",
+                "you got a fishing level of 60.")
+        }
+        THIRD_OPTION -> {
+            it.chatPlayer("Never Mind")
         }
     }
-}*/
+}
 
-suspend fun nevermind(it: QueueTask) {
-    it.chatPlayer("Never mind...")
-    it.chatNpc("Its still a good day for Fishing!.")
+suspend fun mainChatWith60(it: QueueTask) {
+    it.chatNpc(
+        "Greetings, adventurer. How can I help you?")
+    when (it.options(
+        "Who are you?",
+        "Can you teleport me to the fishing guild?",
+        "Never Mind"
+    )) {
+                FIRST_OPTION -> {
+                    it.chatPlayer("Who are you?")
+                    it.chatNpc(
+                        "I'm a old fisherman, got a high skill of fishing!",
+                        "I had fight for years with fish!")
+                }
+                SECOND_OPTION -> {
+                    it.chatPlayer("Can you teleport me to the fishing guild?")
+                    it.chatNpc(
+                        "Sure i can teleport you to the fishing guild.",
+                        "are you sure about it?")
+                    when (it.options(
+                        "Yes.",
+                        "No.")) {
+                        FIRST_OPTION -> {
+                            it.chatPlayer("Yes, please.")
+                            travelTeleport(it.player, dialogue = "De Piscibus Et Mari!", Tile(2596, 3403, 0))
+                            }
+                        SECOND_OPTION -> {
+                            it.chatPlayer("No thanks...")
+                            }
+                        }
+                    }
+        THIRD_OPTION -> {
+            it.chatPlayer("Never Mind")
+        }
+    }
 }
