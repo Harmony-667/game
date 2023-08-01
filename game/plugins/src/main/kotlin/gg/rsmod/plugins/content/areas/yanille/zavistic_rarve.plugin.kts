@@ -36,8 +36,8 @@ suspend fun optionOne(it: QueueTask) {
 
 suspend fun optionTwo(it: QueueTask) {
     it.chatNpc("Well the portal on the East goes to the Legends Guild!")
-    it.chatNpc("Well the portal on the South goes to Nothing!")
-    it.chatNpc("Well the portal on the West goes to Nothing!")
+    it.chatNpc("Well the portal on the South goes to Edgeville!")
+    it.chatNpc("Well the portal on the West goes to the Fishing Colony!")
     it.chatNpc("I dont know the right formula for the spells.","I will figure that out!", "Come back later and maybe i know one of the spells!")
     mainDialogue(it, true)
 }

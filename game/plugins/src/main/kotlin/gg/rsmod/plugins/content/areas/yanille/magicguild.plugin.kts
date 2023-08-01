@@ -38,6 +38,6 @@ on_obj_option(obj = Objs.MAGIC_PORTAL_2157, option = "Enter") {
 }
 //magicguild South Portal
 on_obj_option(obj = Objs.MAGIC_PORTAL_2158, option = "Enter") {
-    //player.moveTo(2728, 3347, 0)
-    player.message("Comming Soon")
+    player.moveTo(2336, 3689, 0)
+    player.message("You have been teleported...")
 }
