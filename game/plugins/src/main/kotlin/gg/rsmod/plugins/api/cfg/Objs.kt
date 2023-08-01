@@ -1416,6 +1416,7 @@ object Objs {
     const val TREE_2448 = 2448
     const val ROOTS_2451 = 2451
     const val MYSTERIOUS_RUINS_2462 = 2462
+    const val STRANGE_STONES_2464 = 2464
     const val PORTAL_2465 = 2465
     const val PORTAL_2466 = 2466
     const val PORTAL_2467 = 2467

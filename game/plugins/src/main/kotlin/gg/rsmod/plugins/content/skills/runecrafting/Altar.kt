@@ -153,6 +153,7 @@ enum class Altar(
     ),
 
     BLOOD(
+        ruins = intArrayOf(Objs.STRANGE_STONES_2464),
         altar = Objs.ALTAR_30624,
         talisman = Items.BLOOD_TALISMAN,
         tiara = Items.BLOOD_TIARA,
