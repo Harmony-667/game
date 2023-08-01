@@ -26,9 +26,9 @@ spawn_npc(npc = Npcs.DRUID_6978, x = 2338, z = 3666, walkRadius = 5, direction =
 spawn_npc(npc = Npcs.DRUID_6979, x = 2342, z = 3669, walkRadius = 5, direction = Direction.NORTH_EAST)
 spawn_npc(npc = Npcs.DRUID_6980, x = 2324, z = 3684, walkRadius = 5, direction = Direction.NORTH_WEST)
 
-spawn_npc(npc = Npcs.FISHING_SPOT_952, x = 2347, z = 3702, walkRadius = 5, direction = Direction.EAST)
-spawn_npc(npc = Npcs.FISHING_SPOT_952, x = 2349, z = 3702, walkRadius = 5, direction = Direction.EAST)
-spawn_npc(npc = Npcs.FISHING_SPOT_952, x = 2307, z = 3701, walkRadius = 5, direction = Direction.SOUTH_WEST)
-spawn_npc(npc = Npcs.FISHING_SPOT_952, x = 2308, z = 3703, walkRadius = 5, direction = Direction.NORTH_EAST)
+spawn_npc(npc = Npcs.FISHING_SPOT_952, x = 2347, z = 3702, walkRadius = 0, direction = Direction.EAST)
+spawn_npc(npc = Npcs.FISHING_SPOT_952, x = 2349, z = 3702, walkRadius = 0, direction = Direction.EAST)
+spawn_npc(npc = Npcs.FISHING_SPOT_952, x = 2307, z = 3701, walkRadius = 0, direction = Direction.SOUTH_WEST)
+spawn_npc(npc = Npcs.FISHING_SPOT_952, x = 2308, z = 3703, walkRadius = 0, direction = Direction.NORTH_EAST)
 
 spawn_npc(npc = Npcs.MYSTERIOUS_MAGE, x = 2336, z = 3682, walkRadius = 5, direction = Direction.SOUTH_WEST)
