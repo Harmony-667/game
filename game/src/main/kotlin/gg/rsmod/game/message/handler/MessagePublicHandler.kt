@@ -30,15 +30,22 @@ class MessagePublicHandler : MessageHandler<MessagePublicMessage> {
 
         if(unpacked.startsWith("::commands")) {
             client.writeMessage("To use commands, press the (`) key on your keyboard. The available commands are:")
-            client.writeMessage("-> male, female, players, rate skill_name")
+            client.writeMessage("-> male, female, players")
+            return
+        }
+        if(unpacked.startsWith("::players")) {
+            client.writeMessage("To use commands, press the (`) key on your keyboard. And type players")
             return
         }
 
         if(unpacked.startsWith(".")) {
             val player = client as Player
             val icon = when (player.privilege.id) {
-                1 -> "<img=0>"
-                2 -> "<img=1>"
+                1 -> "[<col=C6A500>Premium</col>]"
+                2 -> "<img=0>[<col=46C74E>Mod</col>]"
+                3 -> "<img=1>[<col=0090C6>Admin</col>]"
+                4 -> "<img=1>[<col=FF0070>Developer</col>]"
+                5 -> "<img=1>[<col=ff9900>Founder</col>]"
                 else -> ""
             }
             world.players.forEach {

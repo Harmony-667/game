@@ -9,7 +9,7 @@ import java.lang.reflect.Modifier
 import java.nio.file.Files
 import java.nio.file.Paths
 
-on_command("add_spawn", Privilege.ADMIN_POWER) {
+on_command("add_spawn", Privilege.DEV_POWER) {
     val args = player.getCommandArgs()
     tryWithUsage(player, args, "Invalid format! Example of proper command <col=42C66C>::add_spawn 0</col>") { values ->
         val id = values[0].toInt()

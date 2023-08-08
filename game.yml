@@ -30,8 +30,12 @@ privileges:
     powers: ["mod", "admin"]
   - id: 4
     icon: 2
-    name: "owner"
-    powers: [ "mod", "dev", "admin", "owner" ]
+    name: "developer"
+    powers: [ "mod", "dev", "admin"]
+  - id: 5
+    icon: 2
+    name: "founder"
+    powers: [ "mod", "dev", "admin", "owner"]
 
 # Game services
 # You can pick and choose which services you want to run.
