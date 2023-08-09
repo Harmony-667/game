@@ -12,21 +12,12 @@ on_npc_option(npc = Npcs.GUNNJORN, option = "talk-to") {
 suspend fun mainDialogue(it: QueueTask, skipStart: Boolean) {
     if (!skipStart)
         it.chatNpc("Greetings, adventurer. Do you want to change course?")
-    when(it.options("Gnome Stronghold Agility Course", "Penguin Agility Course", "Barbian Outpost Agility Course", "Wilderness Agility Course (DANGER)", "Werewolf Agility Course")) {
+    when(it.options("Gnome Stronghold Agility Course", "Wilderness Agility Course (DANGER)")) {
         1 -> {
             Gnome(it)
         }
         2 -> {
-            Penguin(it)
-        }
-        3 -> {
-            Barbian(it)
-        }
-        4 -> {
             Wilderness(it)
-        }
-        5 -> {
-            Werewolf(it)
         }
     }
 }
@@ -44,28 +35,18 @@ suspend fun Gnome(it: QueueTask) {
     }
 }
 
-suspend fun Penguin(it: QueueTask) {
-    it.chatNpc("Comming soon!")
-}
-
-suspend fun Barbian(it: QueueTask) {
-    it.chatNpc("Would you change course to the Gnome Stronghild Agility Course?")
-    when(it.options("Yes, please.", "No, thank you.")) {
-        1 -> {
-            it.chatPlayer("Yes, please.")
-            travelTeleport(it.player, dialogue = "Ego te movere", Tile(2552, 3558, 0))
-        }
-        2 -> {
-            it.chatPlayer("No, thank you.")
+suspend fun Wilderness(it: QueueTask) {
+        it.chatNpc("Would you change course to the Wilderness Agility Course?", "Its wild out there, u can lose your items!")
+        when(it.options("Yes, please.", "No, thank you.")) {
+            1 -> {
+                it.chatPlayer("Yes, please.")
+                travelTeleport(it.player, dialogue = "Ego te movere", Tile(2998, 3911, 0))
+            }
+            2 -> {
+                it.chatPlayer("No, thank you.")
+            }
         }
     }
-}
-suspend fun Wilderness(it: QueueTask) {
-    it.chatNpc("Comming Soon!")
-}
-suspend fun Werewolf(it: QueueTask) {
-    it.chatNpc("Comming Soon!")
-}
 
 on_timer(FORCE_CHAT_TIMER) {
     if (!npc.isAlive())
