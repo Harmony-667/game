@@ -12,7 +12,7 @@ on_npc_option(npc = Npcs.GNOME_TRAINER, option = "talk-to") {
 suspend fun mainDialogue(it: QueueTask, skipStart: Boolean) {
     if (!skipStart)
         it.chatNpc("Greetings, adventurer. Do you want to change course?")
-    when(it.options("Barbian Outpost Agility Course", "Wilderness Agility Course (DANGER) (Comming soon)")) {
+    when(it.options("Barbarian Outpost Agility Course", "Wilderness Agility Course (DANGER) (Comming soon)")) {
 
         1 -> {
             Barbian(it)
@@ -26,7 +26,7 @@ suspend fun mainDialogue(it: QueueTask, skipStart: Boolean) {
 
 
 suspend fun Barbian(it: QueueTask) {
-    it.chatNpc("Would you change course to the bARBIAN Agility Course?")
+    it.chatNpc("Would you change course to the barbarian Agility Course?")
     when(it.options("Yes, please.", "No, thank you.")) {
         1 -> {
             it.chatPlayer("Yes, please.")
