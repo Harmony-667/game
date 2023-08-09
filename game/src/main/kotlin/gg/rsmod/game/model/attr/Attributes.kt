@@ -52,8 +52,8 @@ val ADVANCED_GNOME_AGILITY_STAGE = AttributeKey<Int>()
 /**
  * The barbian agility stage
  */
-val BARBIAN_AGILITY_STAGE = AttributeKey<Int>()
-val ADVANCED_BARBIAN_AGILITY_STAGE = AttributeKey<Int>()
+val BARBARIAN_AGILITY_STAGE = AttributeKey<Int>()
+val ADVANCED_BARBARIAN_AGILITY_STAGE = AttributeKey<Int>()
 
 /**
  * The wilderness agility stage
