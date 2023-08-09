@@ -13,7 +13,7 @@ import gg.rsmod.plugins.content.quests.impl.DruidicRitual
 val chosenSkillVarp = 261
 
 // List of skills that are not allowed to be chosen
-val blockedSkills = listOf(Skills.CONSTRUCTION, Skills.SUMMONING, Skills.DUNGEONEERING, Skills.HUNTER)
+val blockedSkills = listOf(Skills.CONSTRUCTION, Skills.SUMMONING, Skills.DUNGEONEERING, Skills.HUNTER, Skills.FARMING,)
 
 /**
  * Handles the button clicks for skill selection buttons (components 30 to 54).
@@ -39,13 +39,6 @@ on_button(interfaceId = 1139, component = 2) {
 
     val skillName = Skills.getSkillName(world, interfaceEntry.skillId)
 
-    if (interfaceEntry == LampInterface.HERBLORE && !player.finishedQuest(DruidicRitual)) {
-        player.queue {
-            doubleMessageBox("You need to complete Druidic Ritual before you can", "earn experience in Herblore.")
-        }
-        player.closeInterface(dest = InterfaceDestination.MAIN_SCREEN)
-        return@on_button
-    }
 
     if (blockedSkills.contains(interfaceEntry.skillId)) {
         player.queue {
@@ -57,7 +50,7 @@ on_button(interfaceId = 1139, component = 2) {
 
     player.closeInterface(dest = InterfaceDestination.MAIN_SCREEN)
     if (player.inventory.remove(Items.LAMP).hasSucceeded()) {
-        val experience = player.skills.getMaxLevel(interfaceEntry.skillId) * 10.0
+        val experience = player.skills.getMaxLevel(interfaceEntry.skillId) * 40.0
         player.addXp(skill = interfaceEntry.skillId, xp = experience, modifiers = false)
         player.playSound(2655)
         player.queue {
