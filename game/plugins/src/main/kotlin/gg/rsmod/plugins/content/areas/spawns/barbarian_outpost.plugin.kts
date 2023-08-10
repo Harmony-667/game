@@ -6,5 +6,5 @@ package gg.rsmod.plugins.content.areas.spawns
  */
 
 /** NPC's */
-spawn_npc(npc = Npcs.GUNNJORN, x = 2545, z = 3551, walkRadius = 5, direction = Direction.WEST)
+spawn_npc(npc = Npcs.GUNNJORN, x = 2548, z = 3568, walkRadius = 5, direction = Direction.WEST)
 
