@@ -30,7 +30,7 @@ suspend fun Barbian(it: QueueTask) {
     when(it.options("Yes, please.", "No, thank you.")) {
         1 -> {
             it.chatPlayer("Yes, please.")
-            travelTeleport(it.player, dialogue = "Ego te movere", Tile(2552, 3558, 0))
+            travelTeleport(it.player, dialogue = "Ego te movere", Tile(2548, 3568, 0))
         }
         2 -> {
             it.chatPlayer("No, thank you.")
