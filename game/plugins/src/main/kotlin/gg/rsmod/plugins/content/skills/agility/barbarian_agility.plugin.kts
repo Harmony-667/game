@@ -54,6 +54,19 @@ fun increaseAdvancedStage(player: Player, newStage: Int) {
     if (stage + 1 == newStage)
         player.setAdvancedBarbarianAgilityStage(newStage)
 }
+on_obj_option(obj = Objs.OBSTACLE_PIPE_20210, option = "Squeeze-through") {
+    if (player.skills.getCurrentLevel(Skills.AGILITY) > 34) {
+        player.queue {
+            val x = 2552
+            val z = if (player.tile.x == 3557) 3561 else 3557
+            player.moveTo(tile = Tile(x = x, z = z))
+        }
+    }
+    else {
+        player.message("You need a agility of level 35 to squeeze through this pipe!")
+    }
+}
+
 on_obj_option(obj = Objs.ROPE_SWING_43526, option = "Swing-on") {
     val destination = Tile(player.tile.x, 3549, 0)
     val distance = player.tile.getDistance(destination)
