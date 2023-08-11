@@ -30,3 +30,9 @@ spawn_npc(npc = Npcs.MAN_3, x = 3098, z = 3509, walkRadius = 5, direction = Dire
 spawn_npc(npc = Npcs.WOMAN_BRUNETTE_LONGSKIRT_4, x = 3096, z = 3509, walkRadius = 5, direction = Direction.WEST)
 spawn_npc(npc = Npcs.WOMAN_BRUNETTE_PONYTAIL_5, x = 3097, z = 3511, walkRadius = 5, direction = Direction.NORTH_EAST)
 spawn_npc(npc = Npcs.WOMAN_WOMAN_BLOND_PONYTAIL_6, x = 3093, z = 3512, walkRadius = 5, direction = Direction.EAST)
+
+spawn_npc(npc = Npcs.EARTH_WARRIOR, x = 3095, z = 3480, walkRadius = 5, direction = Direction.NORTH)
+spawn_npc(npc = Npcs.EARTH_WARRIOR, x = 3092, z = 3479, walkRadius = 5, direction = Direction.NORTH)
+spawn_npc(npc = Npcs.EARTH_WARRIOR, x = 3095, z = 3475, walkRadius = 5, direction = Direction.NORTH)
+spawn_npc(npc = Npcs.EARTH_WARRIOR, x = 3092, z = 3475, walkRadius = 5, direction = Direction.NORTH)
+spawn_npc(npc = Npcs.EARTH_WARRIOR_CHAMPION, x = 3094, z = 3470, walkRadius = 5, direction = Direction.NORTH)
