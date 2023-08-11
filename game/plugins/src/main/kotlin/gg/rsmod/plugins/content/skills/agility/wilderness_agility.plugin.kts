@@ -148,11 +148,10 @@ on_obj_option(obj = Objs.STEPPING_STONE_37704, option = "Cross") {
             player.tile,
             Tile(obj.tile.x, obj.tile.z),
             clientDuration1 = 10,
-            clientDuration2 = 50,
+            clientDuration2 = 70,
             directionAngle = Direction.WEST.ordinal,
             lockState = LockState.NONE
         )
-        wait(2)
         player.forceMove(this, move)
         wait(2)
         player.animate(741)
@@ -160,7 +159,7 @@ on_obj_option(obj = Objs.STEPPING_STONE_37704, option = "Cross") {
             player.tile,
             Tile(obj.tile.x - 1, obj.tile.z),
             clientDuration1 = 10,
-            clientDuration2 = 50,
+            clientDuration2 = 70,
             directionAngle = Direction.WEST.ordinal,
             lockState = LockState.NONE
         )
@@ -171,7 +170,7 @@ on_obj_option(obj = Objs.STEPPING_STONE_37704, option = "Cross") {
             player.tile,
             Tile(obj.tile.x - 2, obj.tile.z),
             clientDuration1 = 20,
-            clientDuration2 = 50,
+            clientDuration2 = 70,
             directionAngle = Direction.WEST.ordinal,
             lockState = LockState.NONE
         )
@@ -182,7 +181,7 @@ on_obj_option(obj = Objs.STEPPING_STONE_37704, option = "Cross") {
             player.tile,
             Tile(obj.tile.x - 3, obj.tile.z),
             clientDuration1 = 20,
-            clientDuration2 = 50,
+            clientDuration2 = 70,
             directionAngle = Direction.WEST.ordinal,
             lockState = LockState.NONE
         )
@@ -193,7 +192,7 @@ on_obj_option(obj = Objs.STEPPING_STONE_37704, option = "Cross") {
             player.tile,
             Tile(obj.tile.x - 4, obj.tile.z),
             clientDuration1 = 20,
-            clientDuration2 = 50,
+            clientDuration2 = 70,
             directionAngle = Direction.WEST.ordinal,
             lockState = LockState.NONE
         )
@@ -204,7 +203,7 @@ on_obj_option(obj = Objs.STEPPING_STONE_37704, option = "Cross") {
             player.tile,
             Tile(obj.tile.x - 5, obj.tile.z),
             clientDuration1 = 20,
-            clientDuration2 = 50,
+            clientDuration2 = 70,
             directionAngle = Direction.WEST.ordinal,
             lockState = LockState.NONE
         )
@@ -213,6 +212,41 @@ on_obj_option(obj = Objs.STEPPING_STONE_37704, option = "Cross") {
         player.addXp(Skills.AGILITY, 20.0)
     }
 }
+on_obj_option(obj = Objs.LOG_BALANCE_2297, option = "Walk-across") {
+    val destination = Tile(2994, 3945, 0)
+    val distance = player.tile.getDistance(destination)
+    player.lockingQueue(lockState = LockState.FULL) {
+        player.filterableMessage("You walk carefully across the slippery log...")
+        player.walkTo(destination, MovementQueue.StepType.FORCED_WALK, detectCollision = false)
+        player.setRenderAnimation(155)
+        wait(distance + 2)
+        player.resetRenderAnimation()
+        player.filterableMessage("... and make it safely to the other side.")
+        player.addXp(Skills.AGILITY, 20.0)
+        increaseStage(player, 4)
+    }
+}
+    on_obj_option(obj = Objs.ROCKS_2328, option = "Climb") {
+        val stage = player.getWildernessAgilityStage()
+        val destination = Tile(player.tile.x, 3933, 0)
+        val obj = player.getInteractingGameObj()
+        val distance = player.tile.getDistance(destination)
+        player.lockingQueue(lockState = LockState.FULL) {
+            player.faceTile(obj.tile)
+            player.animate(3378)
+            player.filterableMessage("You start you way up...")
+            wait(distance + 2)
+            player.moveTo(destination)
+            if (stage == 4) {
+                player.addXp(Skills.AGILITY, 0.0 + COMPLETION_BONUS_EXPERIENCE)
+                player.inventory.add((REWARD), amount = (REWARD_AMOUNT))
+                player.setWildernessAgilityStage(0)
+            } else {
+                player.addXp(Skills.AGILITY, 0.0)
+            }
+        }
+    }
+
 fun Player.swingRopeSwing(movement: ForcedMovement) {
     queue {
         playSound(Sfx.SWING_ACROSS)
