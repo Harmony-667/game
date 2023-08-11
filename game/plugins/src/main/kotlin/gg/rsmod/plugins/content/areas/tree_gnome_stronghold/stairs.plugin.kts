@@ -9,7 +9,7 @@ on_obj_option(obj = Objs.STAIRCASE_1744, option = "Climb-Down", lineOfSightDista
     else if (pawn.tile.x == 2445 && pawn.tile.z == 3416 && pawn.tile.height == 1) {
         player.handleLadder(x = 2445, z = 3416, height = 0) //Bank
     }
-    if (pawn.tile.x == 2457 && pawn.tile.z == 3417 && pawn.tile.height == 1) {
+    else if (pawn.tile.x == 2457 && pawn.tile.z == 3417 && pawn.tile.height == 1) {
         player.handleLadder(x = 2457, z = 3417, height = 0) //Gnome Statue
     }
     else if (pawn.tile.x == 2460 && pawn.tile.z == 3417 && pawn.tile.height == 1) {
