@@ -223,6 +223,7 @@ on_obj_option(obj = Objs.BARRIER_43539, option = "Jump-over", lineOfSightDistanc
         player.filterableMessage("... and land on the ground.")
         if (stage == 6) {
             player.addXp(Skills.AGILITY, 25.0 + ADVANCED_COMPLETION_BONUS_EXPERIENCE)
+            player.inventory.add((REWARD), amount = (ADVANCED_REWARD_AMOUNT))
             player.setGnomeAgilityStage(0)
         } else {
             player.addXp(Skills.AGILITY, 25.0)
@@ -279,6 +280,7 @@ pipes.forEach { pipe ->
             player.forceMove(this, move3)
             if (stage == 6) {
                 player.addXp(Skills.AGILITY, 7.5 + COMPLETION_BONUS_EXPERIENCE)
+                player.inventory.add((REWARD), amount = (REWARD_AMOUNT))
                 player.setGnomeAgilityStage(0)
             } else {
                 player.addXp(Skills.AGILITY, 7.5)

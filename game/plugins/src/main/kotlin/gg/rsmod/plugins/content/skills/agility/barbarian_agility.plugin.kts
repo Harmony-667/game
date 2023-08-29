@@ -154,6 +154,7 @@ on_obj_option(obj = Objs.CRUMBLING_WALL, option ="Climb-over") {
                     player.addXp(Skills.AGILITY, 13.7)
                     if (stage == 5) {
                         player.addXp(Skills.AGILITY, 13.7 + COMPLETION_BONUS_EXPERIENCE)
+                        player.inventory.add((REWARD), amount = (REWARD_AMOUNT))
                         player.setBarbarianAgilityStage(0)
                     } else {
                         player.addXp(Skills.AGILITY, 13.7)
@@ -245,6 +246,7 @@ on_obj_option(obj = Objs.ROOF_43532, option = "Slide-down") {
         player.moveTo(destination)
         if (stage == 7) {
             player.addXp(Skills.AGILITY, 15.0 + ADVANCED_COMPLETION_BONUS_EXPERIENCE)
+            player.inventory.add((REWARD), amount = (ADVANCED_REWARD_AMOUNT))
             player.setAdvancedBarbarianAgilityStage(0)
         } else {
             player.addXp(Skills.AGILITY, 15.0)
@@ -274,5 +276,4 @@ fun Player.crumblingWall(movement: ForcedMovement) {
         animate(6132)
         forceMove(this, movement)
     }
-<<<<<<< HEAD
 }
