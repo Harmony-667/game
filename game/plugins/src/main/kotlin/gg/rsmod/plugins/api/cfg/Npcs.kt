@@ -1786,9 +1786,11 @@ object Npcs {
     const val VILLAGER = 1888
     const val VILLAGER_1889 = 1889
     const val VILLAGER_1890 = 1890
+    const val VILLAGER_1891 = 1891
     const val VILLAGER_1892 = 1892
     const val VILLAGER_1893 = 1893
     const val VILLAGER_1894 = 1894
+    const val VILLAGER_1895 = 1895
     const val VILLAGER_1896 = 1896
     const val VILLAGER_1897 = 1897
     const val VILLAGER_1898 = 1898

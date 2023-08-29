@@ -3,6 +3,10 @@ package gg.rsmod.plugins.content.areas.taverley
 import gg.rsmod.plugins.content.drops.DropTableFactory
 import gg.rsmod.plugins.content.drops.DropTableType
 
+/**
+TO-DO: Rework Crystal chest droptables with community
+ **/
+
 val TOOTH = Items.TOOTH_HALF_OF_A_KEY
 val LOOP = Items.LOOP_HALF_OF_A_KEY
 val CRYSTAL_KEY = Items.CRYSTAL_KEY

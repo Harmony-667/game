@@ -10,15 +10,22 @@ val unicorn = table.build {
         obj(Items.BONES)
         obj(Items.UNICORN_HORN)
     }
+    table("Herbs") {
+        total(512)
+        obj(Items.GRIMY_GUAM, quantity = 1, slots = 18)
+        obj(Items.GRIMY_MARRENTILL, quantity = 1, slots = 8)
+        obj(Items.GRIMY_TARROMIN, quantity = 1, slots = 4)
+        nothing (slots = 4)
+    }
 
-    table("Charms") {
+    /*table("Charms") {
         total(1000)
         obj(Items.GOLD_CHARM, quantity = 1, slots = 130)
         obj(Items.GREEN_CHARM, quantity = 1, slots = 60)
         obj(Items.CRIMSON_CHARM, quantity = 1, slots = 40)
         obj(Items.BLUE_CHARM, quantity = 1, slots = 5)
         nothing(slots = 765)
-    }
+    }*/
 }
 
 table.register(unicorn, *ids)

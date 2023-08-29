@@ -37,7 +37,10 @@ val bankers = listOf(
         Npcs.BANKER_OGRESS_7049, // Oo'glog City
         Npcs.BANKER_OGRESS_7050, // Oo'glog City
         Npcs.BANKER_PORTABLE_7605,
-        Npcs.BANKER_CLASSIC_MALE_GREY_1036
+        Npcs.BANKER_CLASSIC_MALE_GREY_1036,
+        Npcs.GNOME_BANKER,
+        Npcs.BANKER_CLASSIC_MALE_GREY_SPIKEYHAIR_499,
+        Npcs.ARNOLD_LYDSPOR
 )
 
 bankers.forEach {

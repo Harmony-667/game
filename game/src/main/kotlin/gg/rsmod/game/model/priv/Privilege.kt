@@ -21,7 +21,11 @@ package gg.rsmod.game.model.priv
 data class Privilege(val id: Int, val icon: Int, val name: String, val powers: Set<String>) {
 
     companion object {
-
+        /**
+         * The global identifier used for premium. This identifier should be
+         * used globally to identify a player with moderator privileges.
+         */
+        const val PREMIUM_POWER = "premium"
         /**
          * The global identifier used for moderators. This identifier should be
          * used globally to identify a player with moderator privileges.

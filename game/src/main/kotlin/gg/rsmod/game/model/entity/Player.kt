@@ -702,7 +702,7 @@ abstract class Player(world: World) : Pawn(world) {
     private var accumulatedTime = 0.0 // Field to store the accumulated time
     fun addXp(skill: Int, xp: Double, modifiers: Boolean = true) {
         val oldXp = skills.getCurrentXp(skill)
-        var modifier = interpolate(1.0, 5.0, skills.getMaxLevel(skill))
+        var modifier = interpolate(4.0, 4.0, skills.getMaxLevel(skill))
 
         // calculate bonus experience
         // based on players elapsed time in-game

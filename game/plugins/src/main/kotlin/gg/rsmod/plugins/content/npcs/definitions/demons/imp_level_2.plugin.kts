@@ -13,41 +13,21 @@ val imp = table.build {
 
     main {
         total(1024)
-        obj(Items.BLACK_BEAD, slots = 40)
-        obj(Items.RED_BEAD, slots = 40)
-        obj(Items.WHITE_BEAD, slots = 40)
-        obj(Items.YELLOW_BEAD, slots = 40)
-
-        obj(Items.BRONZE_BOLTS, slots = 64)
-        obj(Items.WIZARD_HAT, quantity = 1, slots = 64)
-
-        obj(Items.EGG, slots = 47)
-        obj(Items.RAW_CHICKEN, slots = 47)
-        obj(Items.BURNT_BREAD, slots = 39)
-        obj(Items.BURNT_MEAT, slots = 39)
-        obj(Items.CABBAGE, slots = 16)
-        obj(Items.BREAD_DOUGH, slots = 16)
-        obj(Items.BREAD, slots = 8)
-        obj(Items.COOKED_MEAT, slots = 8)
-
-
-        obj(Items.HAMMER, slots = 47)
-        obj(Items.TINDERBOX_590, slots = 64)
-        obj(Items.SHEARS, slots = 39)
-        obj(Items.BUCKET, slots = 32)
-        obj(Items.BUCKET_OF_WATER, slots = 16)
-        obj(Items.JUG, slots = 16)
-        obj(Items.JUG_OF_WATER, slots = 16)
-        obj(Items.EMPTY_POT, slots = 16)
-        obj(Items.POT_OF_FLOUR, slots = 16)
-
-        obj(Items.BALL_OF_WOOL, quantity = 1, slots = 47)
-        obj(Items.MIND_TALISMAN, quantity = 1, slots = 55)
-        obj(Items.ASHES, quantity = 1, slots = 48)
-        obj(Items.CLAY, quantity = 1, slots = 32)
-        obj(Items.CADAVA_BERRIES, quantity = 1, slots = 32)
-        obj(Items.GRAIN, quantity = 1, slots = 24)
-        obj(Items.CHEFS_HAT, quantity = 1, slots = 16)
+        obj(Items.AIR_TALISMAN, quantity = 1, slots = 36)
+        obj(Items.MIND_TALISMAN, quantity = 1, slots = 16)
+        obj(Items.WATER_TALISMAN, quantity = 1, slots = 8)
+        obj(Items.EARTH_TALISMAN, quantity = 1, slots = 4)
+        obj(Items.FIRE_TALISMAN, quantity = 1, slots = 4)
+        obj(Items.BODY_TALISMAN, quantity = 1, slots = 4)
+        obj(Items.COSMIC_TALISMAN, quantity = 1, slots = 2)
+        obj(Items.CHAOS_TALISMAN, quantity = 1, slots = 2)
+        obj(Items.NATURE_TALISMAN, quantity = 1, slots = 2)
+        obj(Items.LAW_TALISMAN, quantity = 1, slots = 2)
+        obj(Items.DEATH_TALISMAN, quantity = 1, slots = 1)
+        obj(Items.BLOOD_TALISMAN, quantity = 1, slots = 1)
+        obj(Items.PURE_ESSENCE_NOTED, quantity = 3, slots = 8)
+        obj(Items.RUNE_ESSENCE, quantity = 5, slots = 36)
+        nothing(slots = 128)
     }
 }
 

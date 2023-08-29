@@ -2,20 +2,17 @@ package gg.rsmod.plugins.content.areas.edgeville
 
 import gg.rsmod.plugins.content.mechanics.shops.CoinCurrency
 
-val shopkeepers = setOf(Npcs.SHOP_ASSISTANT_529, Npcs.SHOPKEEPER_528)
+val shopkeepers = arrayOf(Npcs.SHOPKEEPER_522, Npcs.SHOP_ASSISTANT_523)
 
-create_shop("Edgeville General Store", currency = CoinCurrency(), containsSamples = false) {
-    items[0] = ShopItem(Items.EMPTY_POT, 30)
-    items[1] = ShopItem(Items.JUG, 10)
-    items[2] = ShopItem(Items.SHEARS, 10)
-    items[3] = ShopItem(Items.BUCKET, 30)
-    items[4] = ShopItem(Items.BOWL, 10)
-    items[5] = ShopItem(Items.CAKE_TIN, 10)
-    items[6] = ShopItem(Items.TINDERBOX_590, 10)
-    items[7] = ShopItem(Items.CHISEL, 10)
-    items[8] = ShopItem(Items.HAMMER, 10)
-    items[9] = ShopItem(Items.NEWCOMER_MAP, 10)
-    items[10] = ShopItem(Items.SECURITY_BOOK, 10)
+create_shop("Edgeville General Store", CoinCurrency()) {
+    items[0] = ShopItem(Items.BRONZE_HATCHET, 5)
+    items[1] = ShopItem(Items.SHEARS, 5)
+    items[2] = ShopItem(Items.BUCKET, 5)
+    items[3] = ShopItem(Items.TINDERBOX_590, 5)
+    items[4] = ShopItem(Items.CHISEL, 5)
+    items[5] = ShopItem(Items.HAMMER, 5)
+    items[6] = ShopItem(Items.BRONZE_PICKAXE, 5)
+
 }
 
 shopkeepers.forEach {
@@ -37,4 +34,3 @@ shopkeepers.forEach {
         }
     }
 }
-

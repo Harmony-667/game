@@ -6,6 +6,10 @@ import gg.rsmod.plugins.content.skills.thieving.pickpocketing.PickpocketTarget
 import gg.rsmod.plugins.content.skills.thieving.pickpocketing.Pickpocketing
 import gg.rsmod.plugins.content.skills.thieving.stalls.StallTarget
 import gg.rsmod.plugins.content.skills.thieving.stalls.Stalls
+import gg.rsmod.plugins.content.skills.thieving.cages.CageTarget
+import gg.rsmod.plugins.content.skills.thieving.cages.Cage
+import gg.rsmod.plugins.content.skills.thieving.chests.ChestTarget
+import gg.rsmod.plugins.content.skills.thieving.chests.Chests
 
 PickpocketTarget.values().forEach { target ->
     DropTableFactory.register(target.drops, *target.objectIds.toIntArray(), type = DropTableType.PICKPOCKET)
@@ -24,7 +28,8 @@ StallTarget.values().filter { it != StallTarget.WallSafe }.forEach { target ->
     target.fullAndEmptyObjectIds.keys.forEach { targetId ->
         val option = if (if_obj_has_option(targetId, "steal-from")) {
             "steal-from"
-        } else {
+        }
+        else {
             "steal from"
         }
         on_obj_option(targetId, option) {
@@ -35,13 +40,51 @@ StallTarget.values().filter { it != StallTarget.WallSafe }.forEach { target ->
         }
     }
 }
+CageTarget.values().forEach { target ->
+    DropTableFactory.register(target.drops, *target.fullAndEmptyObjectIds.keys.toIntArray(), type = DropTableType.CAGE)
+    target.fullAndEmptyObjectIds.keys.forEach { targetId ->
+        val option = if (if_obj_has_option(targetId, "unlock")) {
+            "unlock"
+        }
+        else {
+            "Unlock"
+        }
+        on_obj_option(targetId, option) {
+            val obj = player.getInteractingGameObj()
+            player.queue {
+                Cage.stealFromCage(this, obj, target)
+            }
+        }
+    }
+}
+ChestTarget.values().forEach { target ->
+    DropTableFactory.register(target.drops, *target.fullAndEmptyObjectIds.keys.toIntArray(), type = DropTableType.CHEST)
+    target.fullAndEmptyObjectIds.keys.forEach { targetId ->
+        val option = if (if_obj_has_option(targetId, "open")) {
+            "open"
+        }
+        else {
+            "Unlock"
+        }
+        on_obj_option(targetId, option) {
+            val obj = player.getInteractingGameObj()
+            player.queue {
+                Chests.stealFromChest(this, obj, target)
+            }
+        }
+    }
+}
 
 StallTarget.values().flatMap { it.guards }.toSet().forEach { npc ->
     on_npc_spawn(npc) {
         Stalls.stallGuards.add(this.npc)
     }
 }
-
+CageTarget.values().flatMap { it.guards }.toSet().forEach { npc ->
+    on_npc_spawn(npc) {
+        Cage.CageGuards.add(this.npc)
+    }
+}
 
 on_obj_option(obj = Objs.WALL_SAFE, option = "crack") {
     // Find the target wall safe in the list of stall targets

@@ -164,7 +164,7 @@ on_obj_option(obj = Objs.LEVER_1815, option = "pull", lineOfSightDistance = 1) {
                 if (player.isLocked() || player.isDead() || player.interfaces.currentModal != -1) { //TODO: Add condition if player is teleblocked once it's added to the game.
                     player.message("Your teleport was interrupted!")
                 } else {
-                    pullLever(player, obj, 2561, 3311)
+                    pullLever(player, obj, 3090, 3474)
                 }
             }
         }

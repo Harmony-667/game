@@ -9,7 +9,7 @@ import java.lang.reflect.Modifier
 import java.nio.file.Files
 import java.nio.file.Paths
 
-on_command("add_spawn", Privilege.ADMIN_POWER) {
+on_command("add_spawn", Privilege.DEV_POWER) {
     val args = player.getCommandArgs()
     tryWithUsage(player, args, "Invalid format! Example of proper command <col=42C66C>::add_spawn 0</col>") { values ->
         val id = values[0].toInt()
@@ -60,7 +60,8 @@ fun addSpawn(player: Player, id: Int) {
         "spawn_npc(npc = ${if (getName(id) == null) id else "Npcs.${getName(id)}"}, x = ${player.tile.x}, z = ${player.tile.z}, walkRadius = 5, direction = Direction.${player.faceDirection})"
     try {
         val file =
-            File("./game/plugins/src/main/kotlin/gg/rsmod/plugins/content/areas/spawns/spawns_${player.tile.regionId}.plugin.kts")
+            //File("./game/plugins/src/main/kotlin/gg/rsmod/plugins/content/areas/spawns/spawns_${player.tile.regionId}.plugin.kts")
+            File("./game/plugins/src/main/kotlin/gg/rsmod/plugins/content/areas/spawns/treegnomestronghold.plugin.kts")
         if (!file.exists()) {
             createSpawnFile(file)
         }

@@ -29,7 +29,7 @@ fun slashWeb(player: Player, obj: GameObject) {
             player.message("You fail to cut through the web.")
         }
     } else {
-        player.message("You must have a knife to slash the web.")
+        player.message("You must have something sharp to slash the web.")
     }
 }
 

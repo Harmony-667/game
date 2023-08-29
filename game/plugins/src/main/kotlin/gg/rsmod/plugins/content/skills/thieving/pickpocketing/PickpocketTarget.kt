@@ -1,5 +1,6 @@
 package gg.rsmod.plugins.content.skills.thieving.pickpocketing
 
+import gg.rsmod.game.model.entity.Npc
 import gg.rsmod.game.model.entity.Player
 import gg.rsmod.plugins.api.cfg.Items
 import gg.rsmod.plugins.api.cfg.Npcs
@@ -47,7 +48,7 @@ enum class PickpocketTarget(
             main {
                 total(256)
                 obj(Items.COINS_995, quantity = 9, slots = 246)
-                obj(Items.POTATO_SEED, slots = 10)
+                obj(Items.FEATHER, quantityRange = 15 ..50, slots = 100)
             }
         },
         damage = 10..10,
@@ -177,6 +178,20 @@ enum class PickpocketTarget(
         damage = 20..20,
         stunnedTicks = 8
     ),
+    Villager(
+        objectIds = listOf(Npcs.VILLAGER, Npcs.VILLAGER_1889, Npcs.VILLAGER_1890, Npcs.VILLAGER_1892, Npcs.VILLAGER_1893, Npcs.VILLAGER_1894, Npcs.VILLAGER_1896, Npcs.VILLAGER_1897, Npcs.VILLAGER_1898),
+        level = 30,
+        minChance = 100,
+        maxChance = 240,
+        xp = 26.0,
+        drops = DropTableFactory.build {
+            guaranteed {
+                obj(Items.COINS_995, quantity = 5)
+            }
+        },
+        damage = 20..20,
+        stunnedTicks = 8
+    ),
     Rogue(
         objectIds = listOf(Npcs.ROGUE),
         level = 32,
@@ -233,6 +248,7 @@ enum class PickpocketTarget(
         drops = DropTableFactory.build {
             main {
                 total(2199)
+                obj(Items.FEATHER, quantityRange = 1..100, slots = 300)
                 obj(Items.POTATO_SEED, quantityRange = 1..4, slots = 400)
                 obj(Items.ONION_SEED, quantityRange = 1..3, slots = 300)
                 obj(Items.CABBAGE_SEED, quantityRange = 1..3, slots = 150)

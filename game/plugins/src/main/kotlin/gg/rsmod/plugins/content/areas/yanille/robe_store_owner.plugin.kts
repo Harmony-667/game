@@ -4,21 +4,30 @@ import gg.rsmod.plugins.content.mechanics.shops.CoinCurrency
 import gg.rsmod.plugins.content.skills.Skillcapes
 
 create_shop(
-    "Magic Guild Store - Mystic Robes",
+    "Magic Guild Store",
     currency = CoinCurrency(),
     purchasePolicy = PurchasePolicy.BUY_STOCK,
     containsSamples = false
 )
 {
-    items[0] = ShopItem(Items.MYSTIC_HAT, 30)
-    items[1] = ShopItem(Items.MYSTIC_ROBE_TOP, 10)
-    items[2] = ShopItem(Items.MYSTIC_ROBE_BOTTOM, 10)
-    items[3] = ShopItem(Items.MYSTIC_GLOVES, 30)
-    items[4] = ShopItem(Items.MYSTIC_BOOTS, 10)
+    var index = 0
+    items[index++] = ShopItem(Items.MYSTIC_HAT, 30, false, 10000, 0)
+    items[index++] = ShopItem(Items.MYSTIC_ROBE_TOP, 10, false, 15000, 0)
+    items[index++] = ShopItem(Items.MYSTIC_ROBE_BOTTOM, 10, false, 15000, 0)
+    items[index++] = ShopItem(Items.MYSTIC_GLOVES, 30, false, 7500, 0)
+    items[index++] = ShopItem(Items.MYSTIC_BOOTS, 10, false, 7500, 0)
+    items[index++] = ShopItem(Items.AIR_RUNE, 1000, false, 100, 0)
+    items[index++] = ShopItem(Items.WATER_RUNE, 750, false, 100, 0)
+    items[index++] = ShopItem(Items.EARTH_RUNE, 500, false, 100, 0)
+    items[index++] = ShopItem(Items.FIRE_RUNE, 250, false, 100, 0)
+    items[index++] = ShopItem(Items.MIND_RUNE, 1000, false, 100, 0)
+    items[index++] = ShopItem(Items.CHAOS_RUNE, 100, false, 500, 0)
+    items[index++] = ShopItem(Items.DEATH_RUNE, 50, false, 1000, 0)
+    items[index] = ShopItem(Items.NATURE_RUNE, 10, false, 750, 0)
 }
 
 on_npc_option(Npcs.ROBE_STORE_OWNER, "trade") {
-    player.openShop("Magic Guild Store - Mystic Robes")
+    player.openShop("Magic Guild Store")
 }
 
 on_npc_option(npc = Npcs.ROBE_STORE_OWNER, option = "talk-to") {
@@ -41,7 +50,7 @@ suspend fun mainChat(it: QueueTask, player: Player) {
         "No thank you."
     )) {
         FIRST_OPTION -> {
-            player.openShop("Magic Guild Store - Mystic Robes")
+            player.openShop("Magic Guild Store")
         }
         SECOND_OPTION -> {
             //nothing, so close
@@ -95,7 +104,7 @@ suspend fun mainChatWith99(it: QueueTask, player: Player) {
             }
         }
         SECOND_OPTION -> {
-            player.openShop("Magic Guild Store - Mystic Robes")
+            player.openShop("Magic Guild Store")
         }
         THIRD_OPTION -> {
             //nothing, so close

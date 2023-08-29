@@ -83,6 +83,12 @@ on_login {
     }
 
     player.message("Welcome to ${world.gameContext.name}.", ChatMessageType.GAME_MESSAGE)
+    player.message("We are now in Aplha Phase", ChatMessageType.GAME_MESSAGE)
+    player.message("After Beta everything wil have a reset!", ChatMessageType.GAME_MESSAGE)
+    if (player.privilege.id >= 1) {
+        player.message("<col=ff9900>Thanks for you donation to keep ${world.gameContext.name} online!</col>", ChatMessageType.GAME_MESSAGE)
+        player.message("<col=ff9900>You have lifetime Premium Account.</col>", ChatMessageType.GAME_MESSAGE)
+    }
 
     player.checkEquipment()
 

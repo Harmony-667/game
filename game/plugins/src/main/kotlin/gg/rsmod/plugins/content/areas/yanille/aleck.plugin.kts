@@ -3,7 +3,7 @@ package gg.rsmod.plugins.content.areas.yanille
 import gg.rsmod.plugins.content.mechanics.shops.CoinCurrency
 
 /**
- * @author Eikenb00m <https://github.com/Eikenb00m>
+ * @author Alycia <https://github.com/alycii>
  */
 
 create_shop("Aleck's Hunter Emporium", CoinCurrency(), containsSamples = false, purchasePolicy = PurchasePolicy.BUY_STOCK) {
@@ -16,7 +16,7 @@ create_shop("Aleck's Hunter Emporium", CoinCurrency(), containsSamples = false, 
     items[6] = ShopItem(Items.TEASING_STICK, 5)
     items[7] = ShopItem(Items.UNLIT_TORCH, 20)
     items[8] = ShopItem(Items.RABBIT_SNARE, 10)
-    items[9] = ShopItem(Items.GRENWALL_SPIKES, 1)
+    items[5] = ShopItem(Items.GRENWALL_SPIKES, 1)
 }
 
 on_npc_option(npc = Npcs.ALECK, option = "Trade") {
@@ -27,7 +27,7 @@ on_npc_option(npc = Npcs.ALECK, "talk-to") {
     player.queue {
         chatPlayer("Hello.")
         chatNpc("Hello, Hello,"," and a most warm welcome to my Hunter Emporium.", "We have everything the discerning Hunter could need.")
-        chatNpc("Would you like me to show you our range of equipment?"," aOr was there something specific you were after?")
+        chatNpc("Would you like me to show you our range of equipment?"," Or was there something specific you were after?")
         when(options("Ok, let's see what you've got!", "I'm not interested, thanks.", title = "Select an Option")) {
             1 -> {
                 chatPlayer("Ok, let's see what you've got!")

@@ -13,19 +13,14 @@ val cow = table.build {
         obj(Items.COWHIDE)
     }
 
-    main {
-        total(1024)
-        obj(Items.SLING, quantity = 1, slots = 64)
-        nothing(slots = 960)
-    }
-    table("Charms") {
+/*    table("Charms") {
         total(1000)
         obj(Items.GOLD_CHARM, quantity = 1, slots = 9)
         obj(Items.GREEN_CHARM, quantity = 1, slots = 40)
         obj(Items.CRIMSON_CHARM, quantity = 1, slots = 3)
         obj(Items.BLUE_CHARM, quantity = 1, slots = 1)
         nothing(slots = 947)
-    }
+    }*/
 }
 
 table.register(cow, *ids)
@@ -66,11 +61,6 @@ ids.forEach {
             attack = 5849
             death = 5851
             block = 5850
-        }
-        slayer {
-            level = 1
-            experience = 8.0
-            assignment = SlayerAssignment.COW
         }
     }
 }

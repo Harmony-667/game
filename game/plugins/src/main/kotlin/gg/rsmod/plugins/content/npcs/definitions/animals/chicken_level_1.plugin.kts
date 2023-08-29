@@ -15,6 +15,7 @@ val chicken = table.build {
         total(128)
         obj(Items.FEATHER, quantity = 5, slots = 64)
         obj(Items.FEATHER, quantity = 15, slots = 32)
+        obj(Items.EGG, quantity = 1, slots = 8)
         nothing(slots = 32)
     }
 }
@@ -57,11 +58,6 @@ ids.forEach {
             attack = 5387
             death = 5389
             block = 5388
-        }
-        slayer {
-            level = 1
-            experience = 3.0
-            assignment = SlayerAssignment.BIRD
         }
     }
 }

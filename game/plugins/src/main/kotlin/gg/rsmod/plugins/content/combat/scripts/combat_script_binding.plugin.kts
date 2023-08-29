@@ -1,6 +1,7 @@
 package gg.rsmod.plugins.content.combat.scripts
 
 import AberrantSpectreCombatScript
+import NezikchendCombatScript
 import gg.rsmod.plugins.content.combat.scripts.impl.*
 
 /**
@@ -88,5 +89,54 @@ on_npc_combat(*BloodveldCombatScript.ids) {
 on_npc_combat(*CanifisCitizensCombatScript.ids) {
     npc.queue {
         CanifisCitizensCombatScript.handleSpecialCombat(this)
+    }
+}
+
+/**
+ * Sets the [on_npc_combat] for Skeleton Warlock
+ */
+on_npc_combat(*SkeletonWarlockCombatScript.SKELETON_WARLOCK) {
+    npc.queue {
+        SkeletonWarlockCombatScript.handleSpecialCombat(this)
+    }
+}
+/**
+ * Sets the [on_npc_combat] for Arzinian Avatar Of Magic Level75
+ */
+on_npc_combat(*ArzinianAvatarOfMagic75CombatScript.ids) {
+    npc.queue {
+        ArzinianAvatarOfMagic75CombatScript.handleSpecialCombat(this)
+    }
+}
+/**
+ * Sets the [on_npc_combat] for San Tojalon Level 106
+ */
+on_npc_combat(*SanTojalonCombatScript.ids) {
+    npc.queue {
+        SanTojalonCombatScript.handleSpecialCombat(this)
+    }
+}
+/**
+ * Sets the [on_npc_combat] for Black Knight Titan
+ */
+on_npc_combat(*BlackKnightTitanCombatScript.ids) {
+    npc.queue {
+        BlackKnightTitanCombatScript.handleSpecialCombat(this)
+    }
+}
+/**
+ * Sets the [on_npc_combat] for Nezikchend
+ */
+on_npc_combat(*NezikchendCombatScript.ids) {
+    npc.queue {
+        NezikchendCombatScript.handleSpecialCombat(this)
+    }
+}
+/**
+ * Sets the [on_npc_combat] for KBD
+ */
+on_npc_combat(*KingBlackDragonCombatScript.ids) {
+    npc.queue {
+        KingBlackDragonCombatScript.handleSpecialCombat(this)
     }
 }

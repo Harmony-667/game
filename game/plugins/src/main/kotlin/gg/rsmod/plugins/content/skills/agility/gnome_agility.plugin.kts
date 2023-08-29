@@ -6,6 +6,9 @@ import gg.rsmod.game.model.attr.GNOME_AGILITY_STAGE
 val CLIMB_ANIMATION = 828
 val COMPLETION_BONUS_EXPERIENCE = 39.0
 val ADVANCED_COMPLETION_BONUS_EXPERIENCE = 605.0
+val REWARD = Items.AGILITY_ARENA_TICKET
+val REWARD_AMOUNT = 1
+val ADVANCED_REWARD_AMOUNT = 10
 
 fun Player.getGnomeAgilityStage(): Int {
     val lastStage = attr[GNOME_AGILITY_STAGE]
@@ -104,6 +107,8 @@ on_obj_option(obj = Objs.BALANCING_ROPE, option = "Walk-on") {
         increaseStage(player, 4)
     }
 }
+
+
 arrayOf(Objs.TREE_BRANCH, Objs.TREE_BRANCH_2315).forEach { branch ->
     on_obj_option(obj = branch, option = "Climb-down") {
         val obj = player.getInteractingGameObj()

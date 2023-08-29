@@ -3,9 +3,6 @@ package gg.rsmod.plugins.content.npcs.definitions.animals
 import gg.rsmod.game.model.combat.SlayerAssignment
 import gg.rsmod.plugins.content.drops.DropTableFactory
 
-/**
- * @author Alycia <https://github.com/alycii>
- */
 val ids = intArrayOf(Npcs.HELLHOUND)
 
 val table = DropTableFactory
@@ -14,13 +11,25 @@ val hellhound = table.build {
         obj(Items.BONES, quantity = 1)
     }
     main {
-        total(1000)
-        obj(Items.GOLD_CHARM, slots = 690)
-        obj(Items.GREEN_CHARM, slots = 50)
-        obj(Items.CRIMSON_CHARM, slots = 50)
-        obj(Items.BLUE_CHARM, slots = 10)
-        nothing(slots = 200)
+        total(1024)
+        obj(Items.ZAMORAK_FULL_HELM, quantity = 1, slots = 2)
+        obj(Items.ZAMORAK_KITESHIELD, quantity = 1, slots = 2)
+        obj(Items.ZAMORAK_PLATEBODY, quantity = 1, slots = 2)
+        obj(Items.ZAMORAK_PLATELEGS, quantity = 1, slots = 2)
+        obj(Items.ZAMORAK_PLATESKIRT, quantity = 1, slots = 2)
+        obj(Items.GUTHIX_FULL_HELM, quantity = 1, slots = 2)
+        obj(Items.GUTHIX_KITESHIELD, quantity = 1, slots = 2)
+        obj(Items.GUTHIX_PLATEBODY, quantity = 1, slots = 2)
+        obj(Items.GUTHIX_PLATELEGS, quantity = 1, slots = 2)
+        obj(Items.GUTHIX_PLATESKIRT, quantity = 1, slots = 2)
+        obj(Items.SARADOMIN_FULL_HELM, quantity = 1, slots = 2)
+        obj(Items.SARADOMIN_KITESHIELD, quantity = 1, slots = 2)
+        obj(Items.SARADOMIN_PLATEBODY, quantity = 1, slots = 2)
+        obj(Items.SARADOMIN_PLATELEGS, quantity = 1, slots = 2)
+        obj(Items.SARADOMIN_PLATESKIRT, quantity = 1, slots = 2)
+        nothing(slots = 256)
     }
+
 }
 
 table.register(hellhound, *ids)
@@ -55,11 +64,6 @@ ids.forEach {
         }
         aggro {
             radius = 4
-        }
-        slayer {
-            assignment = SlayerAssignment.HELLHOUNDS
-            level = 1
-            experience = 116.0
         }
     }
 }

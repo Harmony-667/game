@@ -210,6 +210,22 @@ enum class PotionType(
         override fun apply(p: Player) {
             applyBoost(p, alteredSkills, alterStrategy)
         }
+    },
+    DRAGON_BITTER(
+    alteredSkills = intArrayOf(Skills.ATTACK, Skills.CONSTITUTION, Skills.SLAYER),
+    alterStrategy = arrayOf("mindBombDrain", "mindBombDrain", "r")
+    ) {
+        override fun apply(p: Player) {
+            applyBoost(p, alteredSkills, alterStrategy)
+        }
+    },
+    BEER(
+        alteredSkills = intArrayOf(Skills.ATTACK, Skills.STRENGTH, Skills.DEFENCE),
+        alterStrategy = arrayOf("mindBombDrain", "r", "mindBombDrain")
+    ) {
+        override fun apply(p: Player) {
+            applyBoost(p, alteredSkills, alterStrategy)
+        }
     };
 
     abstract fun apply(p: Player)

@@ -34,7 +34,7 @@ on_item_option(item = Items.ENCHANTED_GEM, option = "activate") {
             THIRD_OPTION -> {
                 // TODO: Add more options for this when adding more slayer masters
                 chatPlayer("Where are you?")
-                chatNpc("You'll find me in Burthorpe. I'll be here when you need a", "new task.", npc = master.id)
+                chatNpc("You'll find me in Taverley. I'll be here when you need a", "new task.", npc = master.id)
             }
             FOURTH_OPTION -> {
                 chatPlayer("Nothing really.")

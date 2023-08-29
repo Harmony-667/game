@@ -65,12 +65,12 @@ suspend fun afterPerformingCorrectExerciseOrStartingEvent(it: QueueTask, exercis
         it.player.attr[BOTTING_SCORE] = maxOf(0, (it.player.attr[BOTTING_SCORE] ?: 0) - 1)
         it.player.timers.remove(LOGOUT_TIMER)
         val lastKnownPosition: Tile? = it.player.attr[LAST_KNOWN_POSITION]
-        val backupPosition = Tile(x = 3222, z = 3219, 0)
+        val backupPosition = Tile(x = 2606, z = 3102, 0)
         if (lastKnownPosition != null) {
             it.player.moveTo(lastKnownPosition)
         } else {
             // Handle the case where the saved position is null, e.g., notify the player.
-            it.player.message("We couldn't locate your last known position. We'll teleport you to Lumbridge.")
+            it.player.message("We couldn't locate your last known position. We'll teleport you to Yanille.")
             it.player.moveTo(backupPosition)
         }
     } else {

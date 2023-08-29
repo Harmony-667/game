@@ -14,12 +14,10 @@ val whiteWolf = table.build {
         obj(Items.WOLF_BONES, quantity = 1)
     }
     main {
-        total(1000)
-        obj(Items.GOLD_CHARM, slots = 110)
-        obj(Items.GREEN_CHARM, slots = 50)
-        obj(Items.CRIMSON_CHARM, slots = 140)
-        obj(Items.BLUE_CHARM, slots = 80)
-        nothing(slots = 620)
+        total(512)
+        obj(Items.STEEL_PICKAXE, quantity = 1, slots = 2)
+        obj(Items.MITHRIL_PICKAXE, quantity = 1, slots = 1)
+        nothing(slots = 256)
     }
 }
 
@@ -55,11 +53,6 @@ ids.forEach {
         }
         aggro {
             radius = 4
-        }
-        slayer {
-            assignment = SlayerAssignment.WOLF
-            level = 1
-            experience = 44.0
         }
     }
 }

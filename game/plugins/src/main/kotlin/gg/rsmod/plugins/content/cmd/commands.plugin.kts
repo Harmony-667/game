@@ -176,7 +176,7 @@ on_command("kick", Privilege.ADMIN_POWER) {
 }
 
 
-on_command("rate") {
+on_command("rate", Privilege.DEV_POWER) {
     val args = player.getCommandArgs()
     tryWithUsage(
         player,
@@ -217,6 +217,12 @@ on_command("home", Privilege.ADMIN_POWER) {
     player.moveTo(home)
 }
 
+
+on_command("staffzone", Privilege.MOD_POWER) {
+    player.teleport(Tile(2935, 4695, 0), TeleportType.CABBAGE)
+    player.message("You teleported to the Staff Zone")
+}
+
 on_command("changepass") {
     val args = player.getCommandArgs()
     tryWithUsage(
@@ -244,7 +250,7 @@ on_command("noclip", Privilege.ADMIN_POWER) {
     )
 }
 
-on_command("mypos") {
+on_command("mypos", Privilege.MOD_POWER) {
     val instancedMap = world.instanceAllocator.getMap(player.tile)
     val tile = player.tile
     if (instancedMap == null) {
@@ -694,7 +700,17 @@ on_command("give", Privilege.ADMIN_POWER) {
 on_command("food", Privilege.ADMIN_POWER) {
     player.inventory.add(item = Items.MANTA_RAY, amount = player.inventory.freeSlotCount)
 }
-
+on_command("keys", Privilege.ADMIN_POWER) {
+    player.inventory.add(item = Items.KEY_1543, amount = 1)
+    player.inventory.add(item = Items.KEY_1544, amount = 1)
+    player.inventory.add(item = Items.KEY_1545, amount = 1)
+    player.inventory.add(item = Items.KEY_1546, amount = 1)
+    player.inventory.add(item = Items.KEY_1547, amount = 1)
+    player.inventory.add(item = Items.KEY_1548, amount = 1)
+    player.inventory.add(item = Items.SINISTER_KEY, amount = 1)
+    player.inventory.add(item = Items.MUDDY_KEY, amount = 1)
+    player.inventory.add(item = Items.IRON_KEY, amount = 1)
+}
 on_command("varp", Privilege.ADMIN_POWER) {
     val args = player.getCommandArgs()
     tryWithUsage(player, args, "Invalid format! Example of proper command <col=42C66C>::varp 173 1</col>") { values ->
@@ -896,7 +912,7 @@ on_command("bank", Privilege.ADMIN_POWER) {
 }
 
 on_command("shop", Privilege.ADMIN_POWER) {
-    player.openShop("Edgeville General Store")
+    player.openShop("Yanille General Store")
 }
 
 fun tryWithUsage(player: Player, args: Array<String>, failMessage: String, tryUnit: Function1<Array<String>, Unit>) {

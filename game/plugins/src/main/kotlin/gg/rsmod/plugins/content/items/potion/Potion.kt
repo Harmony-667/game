@@ -278,6 +278,16 @@ enum class Potion(
         replacement = Items.BEER_GLASS,
         potionType = PotionType.WIZARDS_MIND_BOMB
     ),
+    DRAGON_BITTER(
+        item = Items.DRAGON_BITTER,
+        replacement = Items.BEER_GLASS,
+        potionType = PotionType.DRAGON_BITTER
+    ),
+    BEER(
+        item = Items.BEER,
+        replacement = Items.BEER_GLASS,
+        potionType = PotionType.BEER
+    ),
     DWARVEN_STOUT(
         item = Items.DWARVEN_STOUT,
         replacement = Items.BEER_GLASS,

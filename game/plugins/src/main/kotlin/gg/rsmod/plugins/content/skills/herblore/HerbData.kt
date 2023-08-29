@@ -8,7 +8,7 @@ enum class HerbData(val grimy: Int, val clean: Int, val unf: Int, val levelRequi
         grimy = Items.GRIMY_GUAM,
         clean = Items.CLEAN_GUAM,
         unf = Items.GUAM_POTION_UNF,
-        levelRequirement = 3,
+        levelRequirement = 1,
         experience = 2.5
     ),
 

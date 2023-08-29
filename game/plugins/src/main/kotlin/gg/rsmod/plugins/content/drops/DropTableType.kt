@@ -5,5 +5,6 @@ enum class DropTableType {
     PICKPOCKET,
     STALL,
     CHEST,
-    BOX
+    BOX,
+    CAGE
 }

@@ -20,9 +20,6 @@ val dwarf = table.build {
         obj(Items.BRONZE_MED_HELM, slots = 4)
         obj(Items.BRONZE_BATTLEAXE, slots = 2)
         obj(Items.IRON_BATTLEAXE, slots = 1)
-        obj(Items.BRONZE_BOLTS, quantityRange = 2..12, slots = 7)
-        obj(Items.CHAOS_RUNE, quantity = 2, slots = 4)
-        obj(Items.NATURE_RUNE, quantity = 2, slots = 4)
         obj(Items.COINS_995, quantity = 4, slots = 20)
         obj(Items.COINS_995, quantity = 10, slots = 15)
         obj(Items.COINS_995, quantity = 30, slots = 2)
@@ -37,19 +34,19 @@ val dwarf = table.build {
         table(Gems.gemTable, slots = 1)
         nothing(23)
     }
-    table("Charms") {
+    /*table("Charms") {
         total(1000)
         obj(Items.GOLD_CHARM, quantity = 1, slots = 40)
         obj(Items.GREEN_CHARM, quantity = 1, slots = 20)
         obj(Items.CRIMSON_CHARM, quantity = 1, slots = 30)
         obj(Items.BLUE_CHARM, quantity = 1, slots = 7)
         nothing(slots = 903)
-    }
-    table("Tertiary") {
+    }*/
+    /*table("Tertiary") {
         total(128)
         obj(Items.CLUE_SCROLL_EASY, slots = 1)
         nothing(127)
-    }
+    }*/
 }
 
 table.register(dwarf, *ids)
@@ -86,11 +83,6 @@ idsLevel10.forEach {
             death = 102
             block = 100
         }
-        slayer {
-            assignment = SlayerAssignment.DWARF
-            level = 1
-            experience = 16.0
-        }
     }
 }
 
@@ -116,11 +108,6 @@ idsLevel11.forEach {
             attack = 99
             death = 102
             block = 100
-        }
-        slayer {
-            assignment = SlayerAssignment.DWARF
-            level = 1
-            experience = 16.0
         }
     }
 }

@@ -50,4 +50,8 @@ enum class FishingSpot(
         objectIds = listOf(Npcs.BARBARIAN_FISHING_SPOT),
         tools = listOf(FishingTool.BARBARIAN_ROD)
     ),
+    TURTLE_MANTA(
+        objectIds = listOf(Npcs.FISHING_SPOT_334),
+        tools = listOf(FishingTool.BIG_FISHING_NET_TURTLE, FishingTool.HARPOON_MANTA)
+    ),
 }

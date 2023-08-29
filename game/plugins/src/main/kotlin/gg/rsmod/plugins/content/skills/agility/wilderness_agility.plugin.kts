@@ -13,6 +13,8 @@ import gg.rsmod.game.model.attr.WILDERNESS_AGILITY_STAGE
  */
 
 val COMPLETION_BONUS_EXPERIENCE = 499.0
+val REWARD = Items.AGILITY_ARENA_TICKET
+val REWARD_AMOUNT = 10
 
 fun Player.getWildernessAgilityStage(): Int {
     val lastStage = attr[WILDERNESS_AGILITY_STAGE]
@@ -234,6 +236,7 @@ on_obj_option(obj = Objs.LOG_BALANCE_2297, option = "Walk-across") {
             player.moveTo(destination)
             if (stage == 4) {
                 player.addXp(Skills.AGILITY, 0.0 + COMPLETION_BONUS_EXPERIENCE)
+                player.inventory.add((REWARD), amount = (REWARD_AMOUNT))
                 player.setWildernessAgilityStage(0)
             } else {
                 player.addXp(Skills.AGILITY, 0.0)

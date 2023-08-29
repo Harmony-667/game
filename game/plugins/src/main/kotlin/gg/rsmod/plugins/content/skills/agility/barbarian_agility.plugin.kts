@@ -16,7 +16,9 @@ import gg.rsmod.game.model.attr.BARBARIAN_AGILITY_STAGE
 val CLIMB_ANIMATION = 828
 val COMPLETION_BONUS_EXPERIENCE = 46.2
 val ADVANCED_COMPLETION_BONUS_EXPERIENCE = 615
-
+val REWARD = Items.AGILITY_ARENA_TICKET
+val REWARD_AMOUNT = 5
+val ADVANCED_REWARD_AMOUNT = 20
 
 fun Player.getBarbarianAgilityStage(): Int {
     val lastStage = attr[BARBARIAN_AGILITY_STAGE]
@@ -272,4 +274,5 @@ fun Player.crumblingWall(movement: ForcedMovement) {
         animate(6132)
         forceMove(this, movement)
     }
+<<<<<<< HEAD
 }

@@ -15,41 +15,19 @@ load_metadata {
 
     properties(
         // Inventory first row
-        0.getItem to Items.BRONZE_HATCHET,
-        1.getItem to Items.TINDERBOX_590,
-        2.getItem to Items.SMALL_FISHING_NET,
-        3.getItem to Items.SHRIMPS,
+        0.getItem to Items.BRONZE_SWORD,
+        1.getItem to Items.WOODEN_SHIELD,
+        2.getItem to Items.SHORTBOW,
+        3.getItem to Items.BRONZE_ARROW,
+        3.getItemAmount to 25,
 
         // Inventory second row
-        4.getItem to Items.BUCKET,
-        5.getItem to Items.EMPTY_POT,
-        6.getItem to Items.BREAD,
-        7.getItem to Items.BRONZE_PICKAXE,
-
-        // Inventory third row
-        8.getItem to Items.BRONZE_DAGGER,
-        9.getItem to Items.BRONZE_SWORD,
-        10.getItem to Items.WOODEN_SHIELD,
-        11.getItem to Items.SHORTBOW,
-
-        // Inventory fourth row
-        12.getItem to Items.BRONZE_ARROW,
-        12.getItemAmount to 25,
-        13.getItem to Items.AIR_RUNE,
-        13.getItemAmount to 25,
-        14.getItem to Items.MIND_RUNE,
-        14.getItemAmount to 15,
-        15.getItem to Items.WATER_RUNE,
-        15.getItemAmount to 6,
-
-        // Inventory sixth row
-        16.getItem to Items.EARTH_RUNE,
-        16.getItemAmount to 4,
-        17.getItem to Items.BODY_RUNE,
-        17.getItemAmount to 2,
-
-        0.getBankItem to Items.COINS_995,
-        0.getBankItemAmount to 25
+        4.getItem to Items.AIR_RUNE,
+        4.getItemAmount to 25,
+        5.getItem to Items.MIND_RUNE,
+        5.getItemAmount to 15,
+        6.getItem to Items.COINS_995,
+        5.getItemAmount to 25,
     )
 }
 
@@ -78,7 +56,7 @@ on_login {
                 else -> "#fa9ff"
             }
             it.message(
-                "[<col=d45b5b>Global</col>]: <col=$color>${Misc.formatForDisplay(player.username)} has just logged into 2011Scape for the first time.</col>"
+                "[<col=d45b5b>Global</col>]: <col=$color>${Misc.formatForDisplay(player.username)} has just logged into Harmony for the first time.</col>"
             )
         }
     }

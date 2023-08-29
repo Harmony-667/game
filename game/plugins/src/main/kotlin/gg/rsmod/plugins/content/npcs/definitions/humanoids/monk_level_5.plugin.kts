@@ -2,7 +2,7 @@ package gg.rsmod.plugins.content.npcs.definitions.humanoids
 
 import gg.rsmod.plugins.content.drops.DropTableFactory
 
-val ids = intArrayOf(Npcs.MONK_7727)
+val ids = intArrayOf(Npcs.MONK, Npcs.MONK_7727)
 
 val table = DropTableFactory
 val monk = table.build {
@@ -33,8 +33,6 @@ ids.forEach {
             attack = 2
             strength = 2
             defence = 3
-            magic = 1
-            ranged = 1
         }
         anims {
             attack = 422
