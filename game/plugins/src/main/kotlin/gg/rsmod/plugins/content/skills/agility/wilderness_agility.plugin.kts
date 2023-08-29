@@ -1,7 +1,5 @@
 package gg.rsmod.plugins.content.skills.agility
 
-import gg.rsmod.game.model.attr.ADVANCED_BARBARIAN_AGILITY_STAGE
-import gg.rsmod.game.model.attr.BARBARIAN_AGILITY_STAGE
 import gg.rsmod.game.model.attr.WILDERNESS_AGILITY_STAGE
 
 /**
@@ -14,7 +12,6 @@ import gg.rsmod.game.model.attr.WILDERNESS_AGILITY_STAGE
  * Add Fail changes
  */
 
-val CLIMB_ANIMATION = 828
 val COMPLETION_BONUS_EXPERIENCE = 499.0
 val REWARD = Items.AGILITY_ARENA_TICKET
 val REWARD_AMOUNT = 10
