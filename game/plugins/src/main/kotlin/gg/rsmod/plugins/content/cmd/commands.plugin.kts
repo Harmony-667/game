@@ -17,8 +17,6 @@ import gg.rsmod.plugins.api.Skills
 import gg.rsmod.plugins.content.combat.dealHit
 import gg.rsmod.plugins.content.inter.attack.AttackTab
 import gg.rsmod.plugins.content.inter.bank.openBank
-import gg.rsmod.plugins.content.magic.TeleportType
-import gg.rsmod.plugins.content.magic.teleport
 import gg.rsmod.plugins.content.skills.farming.core.FarmTicker
 import gg.rsmod.plugins.content.skills.farming.data.SeedType
 import gg.rsmod.util.Misc
@@ -131,30 +129,6 @@ on_command("damage", Privilege.ADMIN_POWER) {
     }
 }
 
-on_command("teleto", Privilege.ADMIN_POWER) {
-    val args = player.getCommandArgs()
-    tryWithUsage(
-        player,
-        args,
-        "Invalid format! Example of proper command <col=42C66C>::teleto alycia</col>"
-    ) { values ->
-        val p = world.getPlayerForName(values[0].replace("_", " ")) ?: return@tryWithUsage
-        player.teleport(p.tile, TeleportType.RING_OF_KINSHIP)
-    }
-}
-
-on_command("teletome", Privilege.ADMIN_POWER) {
-    val args = player.getCommandArgs()
-    tryWithUsage(
-        player,
-        args,
-        "Invalid format! Example of proper command <col=42C66C>::teleto alycia</col>"
-    ) { values ->
-        val p = world.getPlayerForName(values[0].replace("_", " ")) ?: return@tryWithUsage
-        p.teleport(player.tile, TeleportType.RING_OF_KINSHIP)
-    }
-}
-
 on_command("reboot", Privilege.ADMIN_POWER) {
     val args = player.getCommandArgs()
     tryWithUsage(player, args, "Invalid format! Example of proper command <col=42C66C>::reboot 500</col>") { values ->
@@ -212,17 +186,6 @@ on_command("rate", Privilege.DEV_POWER) {
     }
 }
 
-on_command("home", Privilege.ADMIN_POWER) {
-    val home = world.gameContext.home
-    player.moveTo(home)
-}
-
-
-on_command("staffzone", Privilege.MOD_POWER) {
-    player.teleport(Tile(2935, 4695, 0), TeleportType.CABBAGE)
-    player.message("You teleported to the Staff Zone")
-}
-
 on_command("changepass") {
     val args = player.getCommandArgs()
     tryWithUsage(
@@ -275,38 +238,6 @@ on_command("close_inter", Privilege.ADMIN_POWER) {
     player.closeFullscreenInterface()
 }
 
-on_command("tele", Privilege.ADMIN_POWER) {
-    val args = player.getCommandArgs()
-    var x: Int
-    var z: Int
-    var height: Int
-    tryWithUsage(
-        player,
-        args,
-        "Invalid format! Example of proper command <col=42C66C>::tele 3200 3200</col>"
-    ) { values ->
-        if (values.size == 1 && values[0].contains(",")) {
-            val split = values[0].split(",".toRegex())
-            x = split[1].toInt() shl 6 or split[3].toInt()
-            z = split[2].toInt() shl 6 or split[4].toInt()
-            height = split[0].toInt()
-        } else {
-            x = values[0].toInt()
-            z = values[1].toInt()
-            height = if (values.size > 2) values[2].toInt() else 0
-        }
-        player.moveTo(x, z, height)
-    }
-}
-
-on_command("teler", Privilege.ADMIN_POWER) {
-    val args = player.getCommandArgs()
-    tryWithUsage(player, args, "Invalid format! Example of proper command <col=42C66C>::teler 12850</col>") { values ->
-        val region = values[0].toInt()
-        val tile = Tile.fromRegion(region)
-        player.moveTo(tile)
-    }
-}
 
 on_command("anim", Privilege.ADMIN_POWER) {
     val args = player.getCommandArgs()
