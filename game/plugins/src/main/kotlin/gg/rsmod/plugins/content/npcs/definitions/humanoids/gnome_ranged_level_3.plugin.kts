@@ -33,7 +33,7 @@ ids.forEach {
             attackStyle = StyleType.RANGED
         }
         stats {
-            hitpoints = 30
+            hitpoints = 300
             attack = 1
             strength = 1
             defence = 1
