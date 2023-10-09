@@ -55,16 +55,12 @@ fun increaseAdvancedStage(player: Player, newStage: Int) {
         player.setAdvancedBarbarianAgilityStage(newStage)
 }
 on_obj_option(obj = Objs.ROPE_SWING_43526, option = "Swing-on") {
-    val destination = Tile(player.tile.x, 3549, 0)
-    val distance = player.tile.getDistance(destination)
+    val destination = Tile(2552, 3549, 0)
     player.lockingQueue(lockState = LockState.FULL) {
         player.filterableMessage("You swing across...")
-        val movement = ForcedMovement.of(player.tile, destination, clientDuration1 = 60, clientDuration2 = 65, directionAngle = 3, lockState = LockState.FULL)
-        player.animate(751)
+        val swingrope = ForcedMovement.of(player.tile, destination, clientDuration1 = 15, clientDuration2 = 120, directionAngle = 4, lockState = LockState.FULL)
         player.faceTile(destination)
-        player.swingRopeSwing(movement)
-        wait(distance - 4)
-        player.resetRenderAnimation()
+        player.swingRopeSwing(swingrope)
         player.filterableMessage("... and make it safely to the other side.")
         player.addXp(Skills.AGILITY, 22.0)
         player.setBarbarianAgilityStage(1)
@@ -102,15 +98,15 @@ on_obj_option(obj = Objs.OBSTACLE_NET_20211, option = "Climb-over") {
 }
 on_obj_option(obj = Objs.BALANCING_LEDGE, option = "Walk-across") {
     val destination = Tile(2532, 3547, 1)
-    val distance = player.tile.getDistance(destination)
     player.lockingQueue(lockState = LockState.FULL) {
         player.filterableMessage("You walk carefully across the slippery log...")
-        val movement = ForcedMovement.of(player.tile, destination, clientDuration1 = 60, clientDuration2 = 65, directionAngle = 3, lockState = LockState.FULL)
-        player.animate(753)
         player.faceTile(destination)
-        player.walkacrossBalacingLedge(movement)
-        wait(distance)
-        player.resetRenderAnimation()
+        wait(2)
+        player.animate(759)
+        val walkacross = ForcedMovement.of(player.tile, destination, clientDuration1 = 24, clientDuration2 = 40, directionAngle = 3, lockState = LockState.FULL)
+        player.walkacrossBalacingLedge(walkacross)
+        wait(6)
+        player.animate(758)
         player.filterableMessage("... and make it safely to the other side.")
         player.addXp(Skills.AGILITY, 22.0)
         increaseStage(player, 4)
@@ -145,7 +141,7 @@ on_obj_option(obj = Objs.CRUMBLING_WALL, option ="Climb-over") {
                 val stage = player.getBarbarianAgilityStage()
                 val destination = Tile(2543, 3553, 0)
                 player.lockingQueue(lockState = LockState.FULL) {
-                    val movement = ForcedMovement.of(player.tile, destination, clientDuration1 = 33, clientDuration2 = 60, directionAngle = 3, lockState = LockState.FULL)
+                    val movement = ForcedMovement.of(player.tile, destination, clientDuration1 = 54, clientDuration2 = 114, directionAngle = 3, lockState = LockState.FULL)
                     player.faceTile(destination)
                     player.filterableMessage("You climb the low wall...")
                     player.crumblingWall(movement)
@@ -253,19 +249,21 @@ on_obj_option(obj = Objs.ROOF_43532, option = "Slide-down") {
         }
     }
 }
-fun Player.swingRopeSwing(movement: ForcedMovement) {
+fun Player.swingRopeSwing(swingrope: ForcedMovement) {
     queue {
-        //player.stopMovement()
+        player.stopMovement()
+        wait(2)
         playSound(Sfx.SWING_ACROSS)
         animate(751)
-        forceMove(this, movement)
+        forceMove(this, swingrope)
     }
 }
-fun Player.walkacrossBalacingLedge(movement: ForcedMovement) {
+fun Player.walkacrossBalacingLedge(walkacross: ForcedMovement) {
     queue {
-        player.animate(759)
-        forceMove(this, movement)
-        wait(1)
+        player.stopMovement()
+        wait(3)
+        player.animate(756)
+        forceMove(this, walkacross)
     }
 }
 fun Player.crumblingWall(movement: ForcedMovement) {
