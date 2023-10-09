@@ -2,6 +2,7 @@ package gg.rsmod.plugins.content.combat.scripts
 
 import AberrantSpectreCombatScript
 import NezikchendCombatScript
+import UngaduluLevel169CombatScript
 import gg.rsmod.plugins.content.combat.scripts.impl.*
 
 /**
@@ -130,5 +131,13 @@ on_npc_combat(*NezikchendCombatScript.ids) {
 on_npc_combat(*KingBlackDragonCombatScript.ids) {
     npc.queue {
         KingBlackDragonCombatScript.handleSpecialCombat(this)
+    }
+}
+/**
+ * Sets the [on_npc_combat] for UNGADULU
+ */
+on_npc_combat(*UngaduluLevel169CombatScript.ids) {
+    npc.queue {
+        UngaduluLevel169CombatScript.handleSpecialCombat(this)
     }
 }

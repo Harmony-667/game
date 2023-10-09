@@ -12,12 +12,15 @@ val ungadulu = table.build {
         obj(Items.BONES)
     }
     main {
-        total(total = 128)
+        total(total = 1028)
 
-        table(Herbs.minorHerbTable, slots = 46)
+        table(Herbs.minorHerbTable, slots = 460)
 
-        nothing(slots = 33)
-        obj(Items.VIAL_OF_WATER, quantity = 1, slots = 10)
+        nothing(slots = 330)
+        obj(Items.VIAL_OF_WATER, quantity = 1, slots = 100)
+        obj(Items.DRUIDIC_MAGE_BOTTOM_0, quantity = 1, slots = 1)
+        obj(Items.DRUIDIC_MAGE_TOP_0, quantity = 1, slots = 1)
+        obj(Items.DRUIDIC_MAGE_HOOD_0, quantity = 1, slots = 1)
 
     }
 }
@@ -40,7 +43,7 @@ ids.forEach {
             respawnDelay = 300
         }
         stats {
-            hitpoints = 200
+            hitpoints = 1500
             attack = 147
             strength = 147
             defence = 147
